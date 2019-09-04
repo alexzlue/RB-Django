@@ -16,7 +16,7 @@ def index(request):
 
 def detail(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
-    return render(reqest, 'polls/details.html', {'question': question})
+    return render(request, 'polls/detail.html', {'question': question})
 
 
 def results(request, question_id):
