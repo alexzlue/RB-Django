@@ -40,13 +40,16 @@ class QuestionModelTests(TestCase):
         self.assertIs(recent_question.was_published_recently(), True)
 
 
-def create_question(question_text, days):
+def create_question(question_text, days, choices=True):
     '''
     Creates a question with given 'question_text' and number
     of days from now. (-) before now, (+) after now
     '''
     time = timezone.now() + datetime.timedelta(days=days)
-    return Question.objects.create(question_text=question_text, pub_date=time)
+    q = Question.objects.create(question_text=question_text, pub_date=time)
+    if choices:
+        q.choice_set.create(choice_text='exp choice', votes=0)
+    return q
 
 
 class QuestionIndexViewTests(TestCase):
@@ -105,6 +108,33 @@ class QuestionIndexViewTests(TestCase):
         self.assertQuerysetEqual(
             response.context['latest_question_list'],
             ['<Question: past q2>', '<Question: past q1>']
+        )
+
+
+class QuestionChoicesIndexTest(TestCase):
+
+    def test_no_choices(self):
+        '''
+        the index should not display questions if
+        question has no choices
+        '''
+        create_question(question_text='no choice', days=-1, choices=False)
+        response = self.client.get(reverse('polls:index'))
+        self.assertContains(response, 'No polls are available.')
+        self.assertQuerysetEqual(response.context['latest_question_list'], [])
+
+    def test_choices(self):
+        '''
+        test index if displays 2/3 questions, one of which
+        has no choices.
+        '''
+        create_question(question_text='no choice', days=-1, choices=False)
+        create_question(question_text='choice1', days=-1)
+        create_question(question_text='choice2', days=-1)
+        response = self.client.get(reverse('polls:index'))
+        self.assertQuerysetEqual(
+            response.context['latest_question_list'],
+            ["<Question: choice2>", "<Question: choice1>"]
         )
 
 
