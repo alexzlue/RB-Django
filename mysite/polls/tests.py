@@ -43,7 +43,9 @@ class QuestionModelTests(TestCase):
 def create_question(question_text, days, choices=True):
     '''
     Creates a question with given 'question_text' and number
-    of days from now. (-) before now, (+) after now
+    of days from now. (-) before now, (+) after now. if choices is
+    True (default), 1 choice will be created for the question. OTW
+    no choices will be created.
     '''
     time = timezone.now() + datetime.timedelta(days=days)
     q = Question.objects.create(question_text=question_text, pub_date=time)
