@@ -4,7 +4,8 @@ from django.test import TestCase
 from django.utils import timezone
 from django.urls import reverse
 
-from .models import Question, language_check
+from .models import Question
+from .helper import language_check
 
 # Create your tests here.
 
