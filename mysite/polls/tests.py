@@ -4,7 +4,7 @@ from django.test import TestCase
 from django.utils import timezone
 from django.urls import reverse
 
-from .models import Question
+from .models import Question, language_check
 
 # Create your tests here.
 
@@ -160,3 +160,41 @@ class QuestionDetailViewTests(TestCase):
         url = reverse('polls:detail', args=(past_q.id,))
         response = self.client.get(url)
         self.assertContains(response, past_q.question_text)
+
+
+class language_filterTests(TestCase):
+    def test_good_languge(self):
+        '''
+        check if good language. will return tuple of (False, None)
+        '''
+        test_phrase = "Is this a bad question?"
+        resp = language_check(test_phrase)
+        self.assertFalse(resp[0])
+        self.assertEqual(resp[1], None)
+
+    def test_bad_language(self):
+        '''
+        checks coarse language. Will return tuple (True, coarse_word)
+        '''
+        test_phrase = "What the heck is this?"
+        resp = language_check(test_phrase)
+        self.assertTrue(resp[0])
+        self.assertEqual(resp[1], 'heck')
+
+    def test_bad_language_mixed_capitalization(self):
+        '''
+        mixed capitalization on coarse word
+        '''
+        test_phrase = "Crap I forgot"
+        resp = language_check(test_phrase)
+        self.assertTrue(resp[0])
+        self.assertEqual(resp[1], 'crap')
+
+    def test_bad_language_mixed_punctuation(self):
+        '''
+        use of punctuation with coarse word
+        '''
+        test_phrase = 'CrI!Mi..nY??'
+        resp = language_check(test_phrase)
+        self.assertTrue(resp[0])
+        self.assertEqual(resp[1], 'criminy')
