@@ -1,0 +1,110 @@
+blacklisted-words:
+  - heck
+  - hella
+  - crap
+  - criminy
+  - bucko
+  - geez
+
+
+fortune-100-companies:
+  - Hilton
+  - Salesforce
+  - Wegmans Food Morkets
+  - Workday
+  - Kimpton Hotels & Restaurants
+  - Cisco
+  - Edward Jones
+  - Ultimate Software
+  - Texas Health Resources
+  - Boston Consulting Group
+  - Stryker
+  - Publix Super Markets
+  - American Express
+  - Quicken Loans
+  - Orrick
+  - Baird
+  - JM Family Enterprises
+  - Kimley-Horn
+  - Comden Property Trust
+  - Cooley
+  - Plante Moran
+  - Adobe
+  - Veterans United Home Loans
+  - Intuit
+  - The Cheesecake Factory
+  - Deloitte
+  - Pinnacle Financial Partners
+  - SAP America
+  - Navy Federal Credit Union
+  - USAA
+  - Marriott International
+  - Hyatt Hotels
+  - CarMax
+  - EY
+  - Southern Ohio Medical Center
+  - KPMG
+  - BayCare Health System
+  - NVIDIA
+  - Capital One Financial
+  - Baptist Health South Florida
+  - David Weekley Homes
+  - Dropbox
+  - Allianz Life Insurance Co. of North America
+  - PricewaterhouseCoopers
+  - Genentech
+  - REI
+  - Protiviti
+  - Slalom
+  - T-Mobile US
+  - Red Hat
+  - Synchrony Financial
+  - Ryan
+  - Alston & Bird
+  - Encompass Health Home Health & Hospice
+  - American Fidelity Assurance Company
+  - Word Wide Technology
+  - Nationwide
+  - St. Jude Children's Research Hospital
+  - Credit Acceptance
+  - SAS Institute
+  - Accenture
+  - Goldman Sachs Group
+  - AbbVie
+  - HubSpot
+  - Oliver Wyman Group
+  - Bright Horizons Family Solutions
+  - CHG Healthcare
+  - Crowe
+  - Zillow Group
+  - Atlassian
+  - Comcast NBCUniversal
+  - Hyland
+  - Cadence Design Systems
+  - Perkins Coie
+  - Regeneron Pharmaceuticals
+  - Progressive
+  - Power Home Remodeling
+  - Kronos
+  - Children's Healthcare of Atlanta
+  - Workiva
+  - Nugget Market
+  - Burns & McDonnell
+  - First American Financial Corp.
+  - Total Quality Logistics
+  - Sheetz
+  - Custom Ink
+  - Atlantic Health System
+  - Methodist Le Bonheur Healthcare
+  - Four Seasons Hotels & Resorts
+  - Novo Nordisk
+  - Farmers Insurance
+  - Bank of America
+  - Box
+  - Alliance Data Systems
+  - FedEx
+  - Activision Blizzard
+  - Delta Air Lines
+  - Mars
+  - OhioHealth
+  - Patagonia
