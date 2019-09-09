@@ -22,7 +22,6 @@ class Question(models.Model):
     def clean(self):
         question = self.question_text
         value = language_check(question)
-        # print(value)
         if value[0]:
             raise ValidationError(_(
                     'Coarse words like ' + value[1] + ' are not allowed.'))

@@ -19,16 +19,6 @@ class IndexView(generic.ListView):
         Return the last five published questions.
         (not including future questions)
         '''
-
-        # q_set = list(Question.objects.filter(
-        #     pub_date__lte=timezone.now()
-        #     ).order_by('-pub_date'))
-
-        # for question in q_set:
-        #     if question.choice_set.count() <= 0:
-        #         q_set.remove(question)
-        # return q_set[:5]
-
         return Question.objects.annotate(
             choice_count=Count('choice')).filter(
                 choice_count__gt=0,

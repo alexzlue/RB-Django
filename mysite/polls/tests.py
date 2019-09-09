@@ -163,15 +163,15 @@ class QuestionDetailViewTests(TestCase):
         self.assertContains(response, past_q.question_text)
 
 
-class language_filterTests(TestCase):
-    def test_good_languge(self):
+class languageFilterTests(TestCase):
+    def test_good_language(self):
         '''
         check if good language. will return tuple of (False, None)
         '''
         test_phrase = "Is this a bad question?"
         resp = language_check(test_phrase)
         self.assertFalse(resp[0])
-        self.assertEqual(resp[1], None)
+        self.assertIsNone(resp[1], None)
 
     def test_bad_language(self):
         '''
