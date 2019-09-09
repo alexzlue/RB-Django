@@ -4,6 +4,8 @@ from django.db import models
 from django.core.exceptions import ValidationError
 from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
+from django.db.models.signals import pre_save
+from django.dispatch import receiver
 
 from .helper import language_check
 
@@ -43,3 +45,13 @@ class Choice(models.Model):
 
     def __str__(self):
         return self.choice_text
+
+
+@receiver(pre_save, sender=Question)
+def coarse_check(sender, instance, *args, **kwargs):
+    language_filter(instance.question_text)
+
+
+@receiver(pre_save, sender=Choice)
+def check(sender, instance, *args, **kwargs):
+    language_filter(instance.choice_text)
