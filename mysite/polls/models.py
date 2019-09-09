@@ -45,3 +45,16 @@ class Choice(models.Model):
 
     def __str__(self):
         return self.choice_text
+
+
+class Company(models.Model):
+    BUSINESS_TYPES = (
+        ('B2B', 'Business-to-Business'),
+        ('B2C', 'Business-to-Consumer'),
+        ('B2A', 'Business-to-Anyone')
+    )
+    name = models.CharField(max_length=50)
+    description = models.CharField(max_length=200)
+    type = models.CharField(max_length=2, choices=BUSINESS_TYPES)
+    created_at = models.DateTimeField('date created')
+    updated_at = models.DateField('date updated')
