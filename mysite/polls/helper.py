@@ -1,11 +1,13 @@
 import yaml
 
+blacklisted_words = 'polls/blacklist.yaml'
+
 
 def load_yaml_blacklist():
     '''
     loads list into a set and returns
     '''
-    with open('polls/blacklist.yaml', 'r') as f:
+    with open(blacklisted_words, 'r') as f:
         try:
             blacklist = set(yaml.safe_load(f)['blacklisted-words'])
         except yaml.YAMLError as e:
