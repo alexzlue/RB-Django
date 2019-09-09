@@ -8,6 +8,13 @@ from django.utils.translation import gettext_lazy as _
 from .helper import language_check
 
 
+def language_filter(text):
+    value = language_check(text)
+    if value[0]:
+        raise ValidationError(_(
+                'Coarse words like ' + value[1] + ' are not allowed.'))
+
+
 class Question(models.Model):
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')
@@ -20,11 +27,7 @@ class Question(models.Model):
     was_published_recently.short_description = 'Published recently?'
 
     def clean(self):
-        question = self.question_text
-        value = language_check(question)
-        if value[0]:
-            raise ValidationError(_(
-                    'Coarse words like ' + value[1] + ' are not allowed.'))
+        language_filter(self.question_text)
 
     def __str__(self):
         return self.question_text
@@ -36,11 +39,7 @@ class Choice(models.Model):
     votes = models.IntegerField(default=0)
 
     def clean(self):
-        choice = self.choice_text
-        value = language_check(choice)
-        if value[0]:
-            raise ValidationError(_(
-                    'Coarse words like ' + value[1] + ' are not allowed.'))
+        language_filter(self.choice_text)
 
     def __str__(self):
         return self.choice_text
