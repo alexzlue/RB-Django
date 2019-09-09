@@ -25,9 +25,8 @@ def language_check(sentence):
     '''
     blacklist = load_yaml_blacklist()
     punctuation = '?!.\'"'
+    sentence = sentence.translate({ord(i): None for i in '?!.\'"'})
     for word in sentence.split():
-        for punct in punctuation:
-            word = word.replace(punct, '')
         if word.lower() in blacklist:
             return True, word.lower()
     return False, None
