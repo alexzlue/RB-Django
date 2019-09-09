@@ -171,7 +171,7 @@ class languageFilterTests(TestCase):
         test_phrase = "Is this a bad question?"
         resp = language_check(test_phrase)
         self.assertFalse(resp[0])
-        self.assertIsNone(resp[1], None)
+        self.assertIsNone(resp[1])
 
     def test_bad_language(self):
         '''
