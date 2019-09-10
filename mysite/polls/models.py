@@ -1,7 +1,20 @@
 import datetime
 
 from django.db import models
+from django.core.exceptions import ValidationError
 from django.utils import timezone
+from django.utils.translation import gettext_lazy as _
+from django.db.models.signals import pre_save
+from django.dispatch import receiver
+
+from .helper import language_check
+
+
+def language_filter(text):
+    value = language_check(text)
+    if value[0]:
+        raise ValidationError(_(
+                'Coarse words like ' + value[1] + ' are not allowed.'))
 
 
 class Question(models.Model):
@@ -15,6 +28,9 @@ class Question(models.Model):
     was_published_recently.boolean = True
     was_published_recently.short_description = 'Published recently?'
 
+    def clean(self):
+        language_filter(self.question_text)
+
     def __str__(self):
         return self.question_text
 
@@ -24,5 +40,18 @@ class Choice(models.Model):
     choice_text = models.CharField(max_length=200)
     votes = models.IntegerField(default=0)
 
+    def clean(self):
+        language_filter(self.choice_text)
+
     def __str__(self):
         return self.choice_text
+
+
+@receiver(pre_save, sender=Question)
+def coarse_check(sender, instance, *args, **kwargs):
+    language_filter(instance.question_text)
+
+
+@receiver(pre_save, sender=Choice)
+def check(sender, instance, *args, **kwargs):
+    language_filter(instance.choice_text)
