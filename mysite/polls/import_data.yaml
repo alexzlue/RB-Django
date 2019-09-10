@@ -1,12 +1,3 @@
-blacklisted-words:
-  - heck
-  - hella
-  - crap
-  - criminy
-  - bucko
-  - geez
-
-
 fortune-100-companies:
   - Hilton
   - Salesforce

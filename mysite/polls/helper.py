@@ -1,19 +1,33 @@
 import yaml
 
-blacklisted_words = 'polls/blacklist.yaml'
+BLACKLISTED_WORDS = 'polls/blacklist.yaml'
+FORTUNE = 'polls/import_data.yaml'
 
 
 def load_yaml_blacklist():
     '''
     loads list into a set and returns
     '''
-    with open(blacklisted_words, 'r') as f:
+    with open(BLACKLISTED_WORDS, 'r') as f:
         try:
             blacklist = set(yaml.safe_load(f)['blacklisted-words'])
         except yaml.YAMLError as e:
             print(e)
 
     return blacklist
+
+
+def load_yaml_fortune():
+    '''
+    loads fortune 100 list into a set and returns
+    '''
+    with open(FORTUNE, 'r') as f:
+        try:
+            fortune_list = yaml.safe_load(f)['fortune-100-companies']
+        except yaml.YAMLError as e:
+            print(e)
+
+    return fortune_list
 
 
 def language_check(sentence):
