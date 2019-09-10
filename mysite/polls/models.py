@@ -17,7 +17,24 @@ def language_filter(text):
                 'Coarse words like ' + value[1] + ' are not allowed.'))
 
 
+class Company(models.Model):
+    BUSINESS_TYPES = (
+        ('B2B', 'Business-to-Business'),
+        ('B2C', 'Business-to-Consumer'),
+        ('B2A', 'Business-to-Anyone')
+    )
+    name = models.CharField(max_length=50)
+    description = models.CharField(max_length=200, default=None, null=True)
+    type = models.CharField(max_length=2, choices=BUSINESS_TYPES)
+    created_at = models.DateTimeField('date created')
+    updated_at = models.DateField('date updated')
+
+    def __str__(self):
+        return self.name
+
+
 class Question(models.Model):
+    company = models.ForeignKey(Company, on_delete=models.CASCADE)
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')
 
@@ -45,19 +62,6 @@ class Choice(models.Model):
 
     def __str__(self):
         return self.choice_text
-
-
-class Company(models.Model):
-    BUSINESS_TYPES = (
-        ('B2B', 'Business-to-Business'),
-        ('B2C', 'Business-to-Consumer'),
-        ('B2A', 'Business-to-Anyone')
-    )
-    name = models.CharField(max_length=50)
-    description = models.CharField(max_length=200)
-    type = models.CharField(max_length=2, choices=BUSINESS_TYPES)
-    created_at = models.DateTimeField('date created')
-    updated_at = models.DateField('date updated')
 
 
 @receiver(pre_save, sender=Question)
