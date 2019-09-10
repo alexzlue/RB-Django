@@ -24,8 +24,9 @@ class Company(models.Model):
         ('B2A', 'Business-to-Anyone')
     )
     name = models.CharField(max_length=50)
-    description = models.CharField(max_length=200, default=None, null=True)
-    type = models.CharField(max_length=2, choices=BUSINESS_TYPES)
+    description = models.CharField(
+        max_length=200, default=None, null=True, blank=True)
+    type = models.CharField(max_length=3, choices=BUSINESS_TYPES)
     created_at = models.DateTimeField('date created')
     updated_at = models.DateField('date updated')
 

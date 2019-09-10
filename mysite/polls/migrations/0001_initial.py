@@ -17,8 +17,8 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=50)),
-                ('description', models.CharField(default=None, max_length=200, null=True)),
-                ('type', models.CharField(choices=[('B2B', 'Business-to-Business'), ('B2C', 'Business-to-Consumer'), ('B2A', 'Business-to-Anyone')], max_length=2)),
+                ('description', models.CharField(default=None, max_length=200, null=True, blank=True)),
+                ('type', models.CharField(choices=[('B2B', 'Business-to-Business'), ('B2C', 'Business-to-Consumer'), ('B2A', 'Business-to-Anyone')], max_length=3)),
                 ('created_at', models.DateTimeField(verbose_name='date created')),
                 ('updated_at', models.DateField(verbose_name='date updated')),
             ],
