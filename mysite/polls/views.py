@@ -1,13 +1,12 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, HttpResponseRedirect
-from django.urls import reverse
+from django.urls import reverse, reverse_lazy
 from django.views import generic
 from django.utils import timezone
 from django.db.models import Count
 
-from .models import Choice, Question
-
-# Create your views here.
+from .models import Choice, Question, Company
+from .forms import CreateForm
 
 
 class IndexView(generic.ListView):
@@ -26,11 +25,24 @@ class IndexView(generic.ListView):
                 ).order_by('-pub_date')[:5]
 
 
-# class CreateView(generic.DetailView):
+class CreateQuestionView(generic.edit.CreateView):
+    model = Question
+    template_name = 'polls/create.html'
+    fields = '__all__'
+    success_url = reverse_lazy('polls:index')
+
+
+# class UpdateQuestionView(generic.edit.UpdateView):
 #     model = Question
-#     template_name = 'polls/create.html'
-def create(request):
-    return HttpResponse("Youre at create question")
+
+
+# class DeleteQuestionView(generic.edit.DeleteView):
+#     model = Question
+
+
+def create_question(request):
+    form = CreateForm()
+    return render(request, 'polls/create.html', {'form': form})
 
 
 class DetailView(generic.DetailView):

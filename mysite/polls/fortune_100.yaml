@@ -4,7 +4,7 @@
     name: Hilton
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.650278+00:00
+    created_at: 2019-09-11 23:48:53.650278+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 102
@@ -12,7 +12,7 @@
     name: Salesforce
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.681646+00:00
+    created_at: 2019-09-11 23:48:53.681646+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 103
@@ -20,7 +20,7 @@
     name: Wegmans Food Morkets
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.682651+00:00
+    created_at: 2019-09-11 23:48:53.682651+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 104
@@ -28,7 +28,7 @@
     name: Workday
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.683576+00:00
+    created_at: 2019-09-11 23:48:53.683576+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 105
@@ -36,7 +36,7 @@
     name: Kimpton Hotels & Restaurants
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.684506+00:00
+    created_at: 2019-09-11 23:48:53.684506+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 106
@@ -44,7 +44,7 @@
     name: Cisco
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.685495+00:00
+    created_at: 2019-09-11 23:48:53.685495+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 107
@@ -52,7 +52,7 @@
     name: Edward Jones
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.686386+00:00
+    created_at: 2019-09-11 23:48:53.686386+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 108
@@ -60,7 +60,7 @@
     name: Ultimate Software
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.687478+00:00
+    created_at: 2019-09-11 23:48:53.687478+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 109
@@ -68,7 +68,7 @@
     name: Texas Health Resources
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.688698+00:00
+    created_at: 2019-09-11 23:48:53.688698+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 110
@@ -76,7 +76,7 @@
     name: Boston Consulting Group
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.689775+00:00
+    created_at: 2019-09-11 23:48:53.689775+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 111
@@ -84,7 +84,7 @@
     name: Stryker
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.690873+00:00
+    created_at: 2019-09-11 23:48:53.690873+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 112
@@ -92,7 +92,7 @@
     name: Publix Super Markets
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.691917+00:00
+    created_at: 2019-09-11 23:48:53.691917+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 113
@@ -100,7 +100,7 @@
     name: American Express
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.692910+00:00
+    created_at: 2019-09-11 23:48:53.692910+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 114
@@ -108,7 +108,7 @@
     name: Quicken Loans
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.693890+00:00
+    created_at: 2019-09-11 23:48:53.693890+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 115
@@ -116,7 +116,7 @@
     name: Orrick
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.694888+00:00
+    created_at: 2019-09-11 23:48:53.694888+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 116
@@ -124,7 +124,7 @@
     name: Baird
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.696011+00:00
+    created_at: 2019-09-11 23:48:53.696011+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 117
@@ -132,7 +132,7 @@
     name: JM Family Enterprises
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.697227+00:00
+    created_at: 2019-09-11 23:48:53.697227+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 118
@@ -140,7 +140,7 @@
     name: Kimley-Horn
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.698291+00:00
+    created_at: 2019-09-11 23:48:53.698291+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 119
@@ -148,7 +148,7 @@
     name: Comden Property Trust
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.699388+00:00
+    created_at: 2019-09-11 23:48:53.699388+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 120
@@ -156,7 +156,7 @@
     name: Cooley
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.700222+00:00
+    created_at: 2019-09-11 23:48:53.700222+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 121
@@ -164,7 +164,7 @@
     name: Plante Moran
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.700985+00:00
+    created_at: 2019-09-11 23:48:53.700985+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 122
@@ -172,7 +172,7 @@
     name: Adobe
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.701789+00:00
+    created_at: 2019-09-11 23:48:53.701789+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 123
@@ -180,7 +180,7 @@
     name: Veterans United Home Loans
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.702832+00:00
+    created_at: 2019-09-11 23:48:53.702832+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 124
@@ -188,7 +188,7 @@
     name: Intuit
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.703809+00:00
+    created_at: 2019-09-11 23:48:53.703809+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 125
@@ -196,7 +196,7 @@
     name: The Cheesecake Factory
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.704790+00:00
+    created_at: 2019-09-11 23:48:53.704790+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 126
@@ -204,7 +204,7 @@
     name: Deloitte
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.705867+00:00
+    created_at: 2019-09-11 23:48:53.705867+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 127
@@ -212,7 +212,7 @@
     name: Pinnacle Financial Partners
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.706922+00:00
+    created_at: 2019-09-11 23:48:53.706922+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 128
@@ -220,7 +220,7 @@
     name: SAP America
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.707925+00:00
+    created_at: 2019-09-11 23:48:53.707925+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 129
@@ -228,7 +228,7 @@
     name: Navy Federal Credit Union
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.708914+00:00
+    created_at: 2019-09-11 23:48:53.708914+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 130
@@ -236,7 +236,7 @@
     name: USAA
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.709832+00:00
+    created_at: 2019-09-11 23:48:53.709832+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 131
@@ -244,7 +244,7 @@
     name: Marriott International
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.710567+00:00
+    created_at: 2019-09-11 23:48:53.710567+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 132
@@ -252,7 +252,7 @@
     name: Hyatt Hotels
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.711317+00:00
+    created_at: 2019-09-11 23:48:53.711317+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 133
@@ -260,7 +260,7 @@
     name: CarMax
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.712145+00:00
+    created_at: 2019-09-11 23:48:53.712145+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 134
@@ -268,7 +268,7 @@
     name: EY
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.713174+00:00
+    created_at: 2019-09-11 23:48:53.713174+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 135
@@ -276,7 +276,7 @@
     name: Southern Ohio Medical Center
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.714142+00:00
+    created_at: 2019-09-11 23:48:53.714142+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 136
@@ -284,7 +284,7 @@
     name: KPMG
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.715100+00:00
+    created_at: 2019-09-11 23:48:53.715100+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 137
@@ -292,7 +292,7 @@
     name: BayCare Health System
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.716053+00:00
+    created_at: 2019-09-11 23:48:53.716053+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 138
@@ -300,7 +300,7 @@
     name: NVIDIA
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.716950+00:00
+    created_at: 2019-09-11 23:48:53.716950+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 139
@@ -308,7 +308,7 @@
     name: Capital One Financial
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.717719+00:00
+    created_at: 2019-09-11 23:48:53.717719+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 140
@@ -316,7 +316,7 @@
     name: Baptist Health South Florida
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.718738+00:00
+    created_at: 2019-09-11 23:48:53.718738+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 141
@@ -324,7 +324,7 @@
     name: David Weekley Homes
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.719716+00:00
+    created_at: 2019-09-11 23:48:53.719716+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 142
@@ -332,7 +332,7 @@
     name: Dropbox
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.720708+00:00
+    created_at: 2019-09-11 23:48:53.720708+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 143
@@ -340,7 +340,7 @@
     name: Allianz Life Insurance Co. of North America
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.721633+00:00
+    created_at: 2019-09-11 23:48:53.721633+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 144
@@ -348,7 +348,7 @@
     name: PricewaterhouseCoopers
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.722573+00:00
+    created_at: 2019-09-11 23:48:53.722573+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 145
@@ -356,7 +356,7 @@
     name: Genentech
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.723580+00:00
+    created_at: 2019-09-11 23:48:53.723580+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 146
@@ -364,7 +364,7 @@
     name: REI
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.727299+00:00
+    created_at: 2019-09-11 23:48:53.727299+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 147
@@ -372,7 +372,7 @@
     name: Protiviti
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.729051+00:00
+    created_at: 2019-09-11 23:48:53.729051+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 148
@@ -380,7 +380,7 @@
     name: Slalom
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.734731+00:00
+    created_at: 2019-09-11 23:48:53.734731+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 149
@@ -388,7 +388,7 @@
     name: T-Mobile US
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.736100+00:00
+    created_at: 2019-09-11 23:48:53.736100+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 150
@@ -396,7 +396,7 @@
     name: Red Hat
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.739840+00:00
+    created_at: 2019-09-11 23:48:53.739840+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 151
@@ -404,7 +404,7 @@
     name: Synchrony Financial
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.742749+00:00
+    created_at: 2019-09-11 23:48:53.742749+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 152
@@ -412,7 +412,7 @@
     name: Ryan
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.743802+00:00
+    created_at: 2019-09-11 23:48:53.743802+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 153
@@ -420,7 +420,7 @@
     name: Alston & Bird
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.744806+00:00
+    created_at: 2019-09-11 23:48:53.744806+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 154
@@ -428,7 +428,7 @@
     name: Encompass Health Home Health & Hospice
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.745865+00:00
+    created_at: 2019-09-11 23:48:53.745865+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 155
@@ -436,7 +436,7 @@
     name: American Fidelity Assurance Company
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.747096+00:00
+    created_at: 2019-09-11 23:48:53.747096+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 156
@@ -444,7 +444,7 @@
     name: Word Wide Technology
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.748394+00:00
+    created_at: 2019-09-11 23:48:53.748394+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 157
@@ -452,7 +452,7 @@
     name: Nationwide
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.749435+00:00
+    created_at: 2019-09-11 23:48:53.749435+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 158
@@ -460,7 +460,7 @@
     name: St. Jude Children's Research Hospital
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.750620+00:00
+    created_at: 2019-09-11 23:48:53.750620+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 159
@@ -468,7 +468,7 @@
     name: Credit Acceptance
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.751657+00:00
+    created_at: 2019-09-11 23:48:53.751657+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 160
@@ -476,7 +476,7 @@
     name: SAS Institute
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.752636+00:00
+    created_at: 2019-09-11 23:48:53.752636+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 161
@@ -484,7 +484,7 @@
     name: Accenture
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.753661+00:00
+    created_at: 2019-09-11 23:48:53.753661+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 162
@@ -492,7 +492,7 @@
     name: Goldman Sachs Group
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.754621+00:00
+    created_at: 2019-09-11 23:48:53.754621+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 163
@@ -500,7 +500,7 @@
     name: AbbVie
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.756042+00:00
+    created_at: 2019-09-11 23:48:53.756042+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 164
@@ -508,7 +508,7 @@
     name: HubSpot
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.757248+00:00
+    created_at: 2019-09-11 23:48:53.757248+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 165
@@ -516,7 +516,7 @@
     name: Oliver Wyman Group
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.758231+00:00
+    created_at: 2019-09-11 23:48:53.758231+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 166
@@ -524,7 +524,7 @@
     name: Bright Horizons Family Solutions
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.759284+00:00
+    created_at: 2019-09-11 23:48:53.759284+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 167
@@ -532,7 +532,7 @@
     name: CHG Healthcare
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.760313+00:00
+    created_at: 2019-09-11 23:48:53.760313+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 168
@@ -540,7 +540,7 @@
     name: Crowe
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.761295+00:00
+    created_at: 2019-09-11 23:48:53.761295+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 169
@@ -548,7 +548,7 @@
     name: Zillow Group
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.762326+00:00
+    created_at: 2019-09-11 23:48:53.762326+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 170
@@ -556,7 +556,7 @@
     name: Atlassian
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.763230+00:00
+    created_at: 2019-09-11 23:48:53.763230+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 171
@@ -564,7 +564,7 @@
     name: Comcast NBCUniversal
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.764150+00:00
+    created_at: 2019-09-11 23:48:53.764150+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 172
@@ -572,7 +572,7 @@
     name: Hyland
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.765201+00:00
+    created_at: 2019-09-11 23:48:53.765201+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 173
@@ -580,7 +580,7 @@
     name: Cadence Design Systems
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.766338+00:00
+    created_at: 2019-09-11 23:48:53.766338+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 174
@@ -588,7 +588,7 @@
     name: Perkins Coie
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.767610+00:00
+    created_at: 2019-09-11 23:48:53.767610+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 175
@@ -596,7 +596,7 @@
     name: Regeneron Pharmaceuticals
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.768714+00:00
+    created_at: 2019-09-11 23:48:53.768714+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 176
@@ -604,7 +604,7 @@
     name: Progressive
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.769783+00:00
+    created_at: 2019-09-11 23:48:53.769783+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 177
@@ -612,7 +612,7 @@
     name: Power Home Remodeling
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.770704+00:00
+    created_at: 2019-09-11 23:48:53.770704+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 178
@@ -620,7 +620,7 @@
     name: Kronos
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.771668+00:00
+    created_at: 2019-09-11 23:48:53.771668+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 179
@@ -628,7 +628,7 @@
     name: Children's Healthcare of Atlanta
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.772600+00:00
+    created_at: 2019-09-11 23:48:53.772600+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 180
@@ -636,7 +636,7 @@
     name: Workiva
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.773654+00:00
+    created_at: 2019-09-11 23:48:53.773654+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 181
@@ -644,7 +644,7 @@
     name: Nugget Market
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.774565+00:00
+    created_at: 2019-09-11 23:48:53.774565+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 182
@@ -652,7 +652,7 @@
     name: Burns & McDonnell
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.775473+00:00
+    created_at: 2019-09-11 23:48:53.775473+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 183
@@ -660,7 +660,7 @@
     name: First American Financial Corp.
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.776355+00:00
+    created_at: 2019-09-11 23:48:53.776355+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 184
@@ -668,7 +668,7 @@
     name: Total Quality Logistics
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.777243+00:00
+    created_at: 2019-09-11 23:48:53.777243+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 185
@@ -676,7 +676,7 @@
     name: Sheetz
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.778269+00:00
+    created_at: 2019-09-11 23:48:53.778269+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 186
@@ -684,7 +684,7 @@
     name: Custom Ink
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.779150+00:00
+    created_at: 2019-09-11 23:48:53.779150+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 187
@@ -692,7 +692,7 @@
     name: Atlantic Health System
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.780043+00:00
+    created_at: 2019-09-11 23:48:53.780043+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 188
@@ -700,7 +700,7 @@
     name: Methodist Le Bonheur Healthcare
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.780922+00:00
+    created_at: 2019-09-11 23:48:53.780922+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 189
@@ -708,7 +708,7 @@
     name: Four Seasons Hotels & Resorts
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.781802+00:00
+    created_at: 2019-09-11 23:48:53.781802+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 190
@@ -716,7 +716,7 @@
     name: Novo Nordisk
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.782706+00:00
+    created_at: 2019-09-11 23:48:53.782706+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 191
@@ -724,7 +724,7 @@
     name: Farmers Insurance
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.783597+00:00
+    created_at: 2019-09-11 23:48:53.783597+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 192
@@ -732,7 +732,7 @@
     name: Bank of America
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.784482+00:00
+    created_at: 2019-09-11 23:48:53.784482+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 193
@@ -740,7 +740,7 @@
     name: Box
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.785360+00:00
+    created_at: 2019-09-11 23:48:53.785360+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 194
@@ -748,7 +748,7 @@
     name: Alliance Data Systems
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.786231+00:00
+    created_at: 2019-09-11 23:48:53.786231+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 195
@@ -756,7 +756,7 @@
     name: FedEx
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.787085+00:00
+    created_at: 2019-09-11 23:48:53.787085+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 196
@@ -764,7 +764,7 @@
     name: Activision Blizzard
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.788142+00:00
+    created_at: 2019-09-11 23:48:53.788142+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 197
@@ -772,7 +772,7 @@
     name: Delta Air Lines
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.789077+00:00
+    created_at: 2019-09-11 23:48:53.789077+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 198
@@ -780,7 +780,7 @@
     name: Mars
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.790074+00:00
+    created_at: 2019-09-11 23:48:53.790074+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 199
@@ -788,7 +788,7 @@
     name: OhioHealth
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.791093+00:00
+    created_at: 2019-09-11 23:48:53.791093+00:00
     updated_at: 2019-09-11
 - model: polls.company
   pk: 200
@@ -796,1291 +796,5 @@
     name: Patagonia
     description: null
     type: B2A
-    created_at: 2019-09-11 16:48:53.800179+00:00
+    created_at: 2019-09-11 23:48:53.800179+00:00
     updated_at: 2019-09-11
-- model: contenttypes.contenttype
-  pk: 1
-  fields:
-    app_label: polls
-    model: company
-- model: contenttypes.contenttype
-  pk: 2
-  fields:
-    app_label: polls
-    model: question
-- model: contenttypes.contenttype
-  pk: 3
-  fields:
-    app_label: polls
-    model: choice
-- model: contenttypes.contenttype
-  pk: 4
-  fields:
-    app_label: admin
-    model: logentry
-- model: contenttypes.contenttype
-  pk: 5
-  fields:
-    app_label: auth
-    model: permission
-- model: contenttypes.contenttype
-  pk: 6
-  fields:
-    app_label: auth
-    model: group
-- model: contenttypes.contenttype
-  pk: 7
-  fields:
-    app_label: auth
-    model: user
-- model: contenttypes.contenttype
-  pk: 8
-  fields:
-    app_label: contenttypes
-    model: contenttype
-- model: contenttypes.contenttype
-  pk: 9
-  fields:
-    app_label: sessions
-    model: session
-- model: sessions.session
-  pk: ck2goa7gaykit6vpwdn9g5hyvytgtu5n
-  fields:
-    session_data: ODY4YjRkYmRiNzMxYjgwNWZmMWQwMjFiOGM5Mjg3MTJmNWYyZTUzZjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3OWVmNmFkYjRhMGI1ZjY2NTU2ZTI3OTczMGZhNmUxMmVhZmYwOTFmIn0=
-    expire_date: 2019-09-24 23:40:02.197159+00:00
-- model: sessions.session
-  pk: t6bu7tpm0yguupor3ycz8mvgx6o35rhg
-  fields:
-    session_data: ODY4YjRkYmRiNzMxYjgwNWZmMWQwMjFiOGM5Mjg3MTJmNWYyZTUzZjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3OWVmNmFkYjRhMGI1ZjY2NTU2ZTI3OTczMGZhNmUxMmVhZmYwOTFmIn0=
-    expire_date: 2019-09-24 21:34:03.200311+00:00
-- model: auth.permission
-  pk: 1
-  fields:
-    name: Can add company
-    content_type: 1
-    codename: add_company
-- model: auth.permission
-  pk: 2
-  fields:
-    name: Can change company
-    content_type: 1
-    codename: change_company
-- model: auth.permission
-  pk: 3
-  fields:
-    name: Can delete company
-    content_type: 1
-    codename: delete_company
-- model: auth.permission
-  pk: 4
-  fields:
-    name: Can view company
-    content_type: 1
-    codename: view_company
-- model: auth.permission
-  pk: 5
-  fields:
-    name: Can add question
-    content_type: 2
-    codename: add_question
-- model: auth.permission
-  pk: 6
-  fields:
-    name: Can change question
-    content_type: 2
-    codename: change_question
-- model: auth.permission
-  pk: 7
-  fields:
-    name: Can delete question
-    content_type: 2
-    codename: delete_question
-- model: auth.permission
-  pk: 8
-  fields:
-    name: Can view question
-    content_type: 2
-    codename: view_question
-- model: auth.permission
-  pk: 9
-  fields:
-    name: Can add choice
-    content_type: 3
-    codename: add_choice
-- model: auth.permission
-  pk: 10
-  fields:
-    name: Can change choice
-    content_type: 3
-    codename: change_choice
-- model: auth.permission
-  pk: 11
-  fields:
-    name: Can delete choice
-    content_type: 3
-    codename: delete_choice
-- model: auth.permission
-  pk: 12
-  fields:
-    name: Can view choice
-    content_type: 3
-    codename: view_choice
-- model: auth.permission
-  pk: 13
-  fields:
-    name: Can add log entry
-    content_type: 4
-    codename: add_logentry
-- model: auth.permission
-  pk: 14
-  fields:
-    name: Can change log entry
-    content_type: 4
-    codename: change_logentry
-- model: auth.permission
-  pk: 15
-  fields:
-    name: Can delete log entry
-    content_type: 4
-    codename: delete_logentry
-- model: auth.permission
-  pk: 16
-  fields:
-    name: Can view log entry
-    content_type: 4
-    codename: view_logentry
-- model: auth.permission
-  pk: 17
-  fields:
-    name: Can add permission
-    content_type: 5
-    codename: add_permission
-- model: auth.permission
-  pk: 18
-  fields:
-    name: Can change permission
-    content_type: 5
-    codename: change_permission
-- model: auth.permission
-  pk: 19
-  fields:
-    name: Can delete permission
-    content_type: 5
-    codename: delete_permission
-- model: auth.permission
-  pk: 20
-  fields:
-    name: Can view permission
-    content_type: 5
-    codename: view_permission
-- model: auth.permission
-  pk: 21
-  fields:
-    name: Can add group
-    content_type: 6
-    codename: add_group
-- model: auth.permission
-  pk: 22
-  fields:
-    name: Can change group
-    content_type: 6
-    codename: change_group
-- model: auth.permission
-  pk: 23
-  fields:
-    name: Can delete group
-    content_type: 6
-    codename: delete_group
-- model: auth.permission
-  pk: 24
-  fields:
-    name: Can view group
-    content_type: 6
-    codename: view_group
-- model: auth.permission
-  pk: 25
-  fields:
-    name: Can add user
-    content_type: 7
-    codename: add_user
-- model: auth.permission
-  pk: 26
-  fields:
-    name: Can change user
-    content_type: 7
-    codename: change_user
-- model: auth.permission
-  pk: 27
-  fields:
-    name: Can delete user
-    content_type: 7
-    codename: delete_user
-- model: auth.permission
-  pk: 28
-  fields:
-    name: Can view user
-    content_type: 7
-    codename: view_user
-- model: auth.permission
-  pk: 29
-  fields:
-    name: Can add content type
-    content_type: 8
-    codename: add_contenttype
-- model: auth.permission
-  pk: 30
-  fields:
-    name: Can change content type
-    content_type: 8
-    codename: change_contenttype
-- model: auth.permission
-  pk: 31
-  fields:
-    name: Can delete content type
-    content_type: 8
-    codename: delete_contenttype
-- model: auth.permission
-  pk: 32
-  fields:
-    name: Can view content type
-    content_type: 8
-    codename: view_contenttype
-- model: auth.permission
-  pk: 33
-  fields:
-    name: Can add session
-    content_type: 9
-    codename: add_session
-- model: auth.permission
-  pk: 34
-  fields:
-    name: Can change session
-    content_type: 9
-    codename: change_session
-- model: auth.permission
-  pk: 35
-  fields:
-    name: Can delete session
-    content_type: 9
-    codename: delete_session
-- model: auth.permission
-  pk: 36
-  fields:
-    name: Can view session
-    content_type: 9
-    codename: view_session
-- model: auth.user
-  pk: 1
-  fields:
-    password: pbkdf2_sha256$150000$41o2sA7ARO43$omOTcV0jdtP/77ywJZgKcHH+7IESGJvgjyLv5d6n7i8=
-    last_login: 2019-09-10 23:40:02.193994+00:00
-    is_superuser: true
-    username: alex
-    first_name: ''
-    last_name: ''
-    email: ''
-    is_staff: true
-    is_active: true
-    date_joined: 2019-09-10 21:33:01.299507+00:00
-    groups: []
-    user_permissions: []
-- model: admin.logentry
-  pk: 1
-  fields:
-    action_time: 2019-09-11 16:45:34.124571+00:00
-    user: 1
-    content_type: 1
-    object_id: '100'
-    object_repr: Patagonia
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 2
-  fields:
-    action_time: 2019-09-11 16:45:34.129198+00:00
-    user: 1
-    content_type: 1
-    object_id: '99'
-    object_repr: OhioHealth
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 3
-  fields:
-    action_time: 2019-09-11 16:45:34.130797+00:00
-    user: 1
-    content_type: 1
-    object_id: '98'
-    object_repr: Mars
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 4
-  fields:
-    action_time: 2019-09-11 16:45:34.131995+00:00
-    user: 1
-    content_type: 1
-    object_id: '97'
-    object_repr: Delta Air Lines
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 5
-  fields:
-    action_time: 2019-09-11 16:45:34.133177+00:00
-    user: 1
-    content_type: 1
-    object_id: '96'
-    object_repr: Activision Blizzard
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 6
-  fields:
-    action_time: 2019-09-11 16:45:34.134306+00:00
-    user: 1
-    content_type: 1
-    object_id: '95'
-    object_repr: FedEx
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 7
-  fields:
-    action_time: 2019-09-11 16:45:34.135411+00:00
-    user: 1
-    content_type: 1
-    object_id: '94'
-    object_repr: Alliance Data Systems
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 8
-  fields:
-    action_time: 2019-09-11 16:45:34.143257+00:00
-    user: 1
-    content_type: 1
-    object_id: '93'
-    object_repr: Box
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 9
-  fields:
-    action_time: 2019-09-11 16:45:34.144685+00:00
-    user: 1
-    content_type: 1
-    object_id: '92'
-    object_repr: Bank of America
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 10
-  fields:
-    action_time: 2019-09-11 16:45:34.147101+00:00
-    user: 1
-    content_type: 1
-    object_id: '91'
-    object_repr: Farmers Insurance
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 11
-  fields:
-    action_time: 2019-09-11 16:45:34.148662+00:00
-    user: 1
-    content_type: 1
-    object_id: '90'
-    object_repr: Novo Nordisk
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 12
-  fields:
-    action_time: 2019-09-11 16:45:34.150039+00:00
-    user: 1
-    content_type: 1
-    object_id: '89'
-    object_repr: Four Seasons Hotels & Resorts
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 13
-  fields:
-    action_time: 2019-09-11 16:45:34.151314+00:00
-    user: 1
-    content_type: 1
-    object_id: '88'
-    object_repr: Methodist Le Bonheur Healthcare
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 14
-  fields:
-    action_time: 2019-09-11 16:45:34.152738+00:00
-    user: 1
-    content_type: 1
-    object_id: '87'
-    object_repr: Atlantic Health System
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 15
-  fields:
-    action_time: 2019-09-11 16:45:34.154373+00:00
-    user: 1
-    content_type: 1
-    object_id: '86'
-    object_repr: Custom Ink
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 16
-  fields:
-    action_time: 2019-09-11 16:45:34.155593+00:00
-    user: 1
-    content_type: 1
-    object_id: '85'
-    object_repr: Sheetz
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 17
-  fields:
-    action_time: 2019-09-11 16:45:34.156699+00:00
-    user: 1
-    content_type: 1
-    object_id: '84'
-    object_repr: Total Quality Logistics
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 18
-  fields:
-    action_time: 2019-09-11 16:45:34.157908+00:00
-    user: 1
-    content_type: 1
-    object_id: '83'
-    object_repr: First American Financial Corp.
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 19
-  fields:
-    action_time: 2019-09-11 16:45:34.158993+00:00
-    user: 1
-    content_type: 1
-    object_id: '82'
-    object_repr: Burns & McDonnell
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 20
-  fields:
-    action_time: 2019-09-11 16:45:34.160159+00:00
-    user: 1
-    content_type: 1
-    object_id: '81'
-    object_repr: Nugget Market
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 21
-  fields:
-    action_time: 2019-09-11 16:45:34.161756+00:00
-    user: 1
-    content_type: 1
-    object_id: '80'
-    object_repr: Workiva
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 22
-  fields:
-    action_time: 2019-09-11 16:45:34.164319+00:00
-    user: 1
-    content_type: 1
-    object_id: '79'
-    object_repr: Children's Healthcare of Atlanta
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 23
-  fields:
-    action_time: 2019-09-11 16:45:34.165512+00:00
-    user: 1
-    content_type: 1
-    object_id: '78'
-    object_repr: Kronos
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 24
-  fields:
-    action_time: 2019-09-11 16:45:34.166691+00:00
-    user: 1
-    content_type: 1
-    object_id: '77'
-    object_repr: Power Home Remodeling
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 25
-  fields:
-    action_time: 2019-09-11 16:45:34.167990+00:00
-    user: 1
-    content_type: 1
-    object_id: '76'
-    object_repr: Progressive
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 26
-  fields:
-    action_time: 2019-09-11 16:45:34.169080+00:00
-    user: 1
-    content_type: 1
-    object_id: '75'
-    object_repr: Regeneron Pharmaceuticals
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 27
-  fields:
-    action_time: 2019-09-11 16:45:34.170275+00:00
-    user: 1
-    content_type: 1
-    object_id: '74'
-    object_repr: Perkins Coie
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 28
-  fields:
-    action_time: 2019-09-11 16:45:34.171438+00:00
-    user: 1
-    content_type: 1
-    object_id: '73'
-    object_repr: Cadence Design Systems
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 29
-  fields:
-    action_time: 2019-09-11 16:45:34.172605+00:00
-    user: 1
-    content_type: 1
-    object_id: '72'
-    object_repr: Hyland
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 30
-  fields:
-    action_time: 2019-09-11 16:45:34.173943+00:00
-    user: 1
-    content_type: 1
-    object_id: '71'
-    object_repr: Comcast NBCUniversal
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 31
-  fields:
-    action_time: 2019-09-11 16:45:34.181380+00:00
-    user: 1
-    content_type: 1
-    object_id: '70'
-    object_repr: Atlassian
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 32
-  fields:
-    action_time: 2019-09-11 16:45:34.182744+00:00
-    user: 1
-    content_type: 1
-    object_id: '69'
-    object_repr: Zillow Group
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 33
-  fields:
-    action_time: 2019-09-11 16:45:34.183878+00:00
-    user: 1
-    content_type: 1
-    object_id: '68'
-    object_repr: Crowe
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 34
-  fields:
-    action_time: 2019-09-11 16:45:34.184953+00:00
-    user: 1
-    content_type: 1
-    object_id: '67'
-    object_repr: CHG Healthcare
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 35
-  fields:
-    action_time: 2019-09-11 16:45:34.186067+00:00
-    user: 1
-    content_type: 1
-    object_id: '66'
-    object_repr: Bright Horizons Family Solutions
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 36
-  fields:
-    action_time: 2019-09-11 16:45:34.187195+00:00
-    user: 1
-    content_type: 1
-    object_id: '65'
-    object_repr: Oliver Wyman Group
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 37
-  fields:
-    action_time: 2019-09-11 16:45:34.188215+00:00
-    user: 1
-    content_type: 1
-    object_id: '64'
-    object_repr: HubSpot
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 38
-  fields:
-    action_time: 2019-09-11 16:45:34.191760+00:00
-    user: 1
-    content_type: 1
-    object_id: '63'
-    object_repr: AbbVie
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 39
-  fields:
-    action_time: 2019-09-11 16:45:34.192872+00:00
-    user: 1
-    content_type: 1
-    object_id: '62'
-    object_repr: Goldman Sachs Group
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 40
-  fields:
-    action_time: 2019-09-11 16:45:34.193947+00:00
-    user: 1
-    content_type: 1
-    object_id: '61'
-    object_repr: Accenture
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 41
-  fields:
-    action_time: 2019-09-11 16:45:34.195045+00:00
-    user: 1
-    content_type: 1
-    object_id: '60'
-    object_repr: SAS Institute
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 42
-  fields:
-    action_time: 2019-09-11 16:45:34.196374+00:00
-    user: 1
-    content_type: 1
-    object_id: '59'
-    object_repr: Credit Acceptance
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 43
-  fields:
-    action_time: 2019-09-11 16:45:34.197329+00:00
-    user: 1
-    content_type: 1
-    object_id: '58'
-    object_repr: St. Jude Children's Research Hospital
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 44
-  fields:
-    action_time: 2019-09-11 16:45:34.198410+00:00
-    user: 1
-    content_type: 1
-    object_id: '57'
-    object_repr: Nationwide
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 45
-  fields:
-    action_time: 2019-09-11 16:45:34.199542+00:00
-    user: 1
-    content_type: 1
-    object_id: '56'
-    object_repr: Word Wide Technology
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 46
-  fields:
-    action_time: 2019-09-11 16:45:34.200862+00:00
-    user: 1
-    content_type: 1
-    object_id: '55'
-    object_repr: American Fidelity Assurance Company
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 47
-  fields:
-    action_time: 2019-09-11 16:45:34.201927+00:00
-    user: 1
-    content_type: 1
-    object_id: '54'
-    object_repr: Encompass Health Home Health & Hospice
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 48
-  fields:
-    action_time: 2019-09-11 16:45:34.203005+00:00
-    user: 1
-    content_type: 1
-    object_id: '53'
-    object_repr: Alston & Bird
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 49
-  fields:
-    action_time: 2019-09-11 16:45:34.207284+00:00
-    user: 1
-    content_type: 1
-    object_id: '52'
-    object_repr: Ryan
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 50
-  fields:
-    action_time: 2019-09-11 16:45:34.208270+00:00
-    user: 1
-    content_type: 1
-    object_id: '51'
-    object_repr: Synchrony Financial
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 51
-  fields:
-    action_time: 2019-09-11 16:45:34.209308+00:00
-    user: 1
-    content_type: 1
-    object_id: '50'
-    object_repr: Red Hat
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 52
-  fields:
-    action_time: 2019-09-11 16:45:34.210279+00:00
-    user: 1
-    content_type: 1
-    object_id: '49'
-    object_repr: T-Mobile US
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 53
-  fields:
-    action_time: 2019-09-11 16:45:34.211317+00:00
-    user: 1
-    content_type: 1
-    object_id: '48'
-    object_repr: Slalom
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 54
-  fields:
-    action_time: 2019-09-11 16:45:34.212310+00:00
-    user: 1
-    content_type: 1
-    object_id: '47'
-    object_repr: Protiviti
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 55
-  fields:
-    action_time: 2019-09-11 16:45:34.213517+00:00
-    user: 1
-    content_type: 1
-    object_id: '46'
-    object_repr: REI
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 56
-  fields:
-    action_time: 2019-09-11 16:45:34.214587+00:00
-    user: 1
-    content_type: 1
-    object_id: '45'
-    object_repr: Genentech
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 57
-  fields:
-    action_time: 2019-09-11 16:45:34.215660+00:00
-    user: 1
-    content_type: 1
-    object_id: '44'
-    object_repr: PricewaterhouseCoopers
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 58
-  fields:
-    action_time: 2019-09-11 16:45:34.216796+00:00
-    user: 1
-    content_type: 1
-    object_id: '43'
-    object_repr: Allianz Life Insurance Co. of North America
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 59
-  fields:
-    action_time: 2019-09-11 16:45:34.217895+00:00
-    user: 1
-    content_type: 1
-    object_id: '42'
-    object_repr: Dropbox
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 60
-  fields:
-    action_time: 2019-09-11 16:45:34.219070+00:00
-    user: 1
-    content_type: 1
-    object_id: '41'
-    object_repr: David Weekley Homes
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 61
-  fields:
-    action_time: 2019-09-11 16:45:34.220075+00:00
-    user: 1
-    content_type: 1
-    object_id: '40'
-    object_repr: Baptist Health South Florida
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 62
-  fields:
-    action_time: 2019-09-11 16:45:34.221086+00:00
-    user: 1
-    content_type: 1
-    object_id: '39'
-    object_repr: Capital One Financial
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 63
-  fields:
-    action_time: 2019-09-11 16:45:34.222177+00:00
-    user: 1
-    content_type: 1
-    object_id: '38'
-    object_repr: NVIDIA
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 64
-  fields:
-    action_time: 2019-09-11 16:45:34.223249+00:00
-    user: 1
-    content_type: 1
-    object_id: '37'
-    object_repr: BayCare Health System
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 65
-  fields:
-    action_time: 2019-09-11 16:45:34.224289+00:00
-    user: 1
-    content_type: 1
-    object_id: '36'
-    object_repr: KPMG
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 66
-  fields:
-    action_time: 2019-09-11 16:45:34.225340+00:00
-    user: 1
-    content_type: 1
-    object_id: '35'
-    object_repr: Southern Ohio Medical Center
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 67
-  fields:
-    action_time: 2019-09-11 16:45:34.226402+00:00
-    user: 1
-    content_type: 1
-    object_id: '34'
-    object_repr: EY
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 68
-  fields:
-    action_time: 2019-09-11 16:45:34.227428+00:00
-    user: 1
-    content_type: 1
-    object_id: '33'
-    object_repr: CarMax
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 69
-  fields:
-    action_time: 2019-09-11 16:45:34.228394+00:00
-    user: 1
-    content_type: 1
-    object_id: '32'
-    object_repr: Hyatt Hotels
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 70
-  fields:
-    action_time: 2019-09-11 16:45:34.229754+00:00
-    user: 1
-    content_type: 1
-    object_id: '31'
-    object_repr: Marriott International
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 71
-  fields:
-    action_time: 2019-09-11 16:45:34.230987+00:00
-    user: 1
-    content_type: 1
-    object_id: '30'
-    object_repr: USAA
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 72
-  fields:
-    action_time: 2019-09-11 16:45:34.231988+00:00
-    user: 1
-    content_type: 1
-    object_id: '29'
-    object_repr: Navy Federal Credit Union
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 73
-  fields:
-    action_time: 2019-09-11 16:45:34.233136+00:00
-    user: 1
-    content_type: 1
-    object_id: '28'
-    object_repr: SAP America
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 74
-  fields:
-    action_time: 2019-09-11 16:45:34.234184+00:00
-    user: 1
-    content_type: 1
-    object_id: '27'
-    object_repr: Pinnacle Financial Partners
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 75
-  fields:
-    action_time: 2019-09-11 16:45:34.235451+00:00
-    user: 1
-    content_type: 1
-    object_id: '26'
-    object_repr: Deloitte
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 76
-  fields:
-    action_time: 2019-09-11 16:45:34.236959+00:00
-    user: 1
-    content_type: 1
-    object_id: '25'
-    object_repr: The Cheesecake Factory
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 77
-  fields:
-    action_time: 2019-09-11 16:45:34.238351+00:00
-    user: 1
-    content_type: 1
-    object_id: '24'
-    object_repr: Intuit
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 78
-  fields:
-    action_time: 2019-09-11 16:45:34.240205+00:00
-    user: 1
-    content_type: 1
-    object_id: '23'
-    object_repr: Veterans United Home Loans
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 79
-  fields:
-    action_time: 2019-09-11 16:45:34.241534+00:00
-    user: 1
-    content_type: 1
-    object_id: '22'
-    object_repr: Adobe
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 80
-  fields:
-    action_time: 2019-09-11 16:45:34.242724+00:00
-    user: 1
-    content_type: 1
-    object_id: '21'
-    object_repr: Plante Moran
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 81
-  fields:
-    action_time: 2019-09-11 16:45:34.243795+00:00
-    user: 1
-    content_type: 1
-    object_id: '20'
-    object_repr: Cooley
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 82
-  fields:
-    action_time: 2019-09-11 16:45:34.244855+00:00
-    user: 1
-    content_type: 1
-    object_id: '19'
-    object_repr: Comden Property Trust
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 83
-  fields:
-    action_time: 2019-09-11 16:45:34.246430+00:00
-    user: 1
-    content_type: 1
-    object_id: '18'
-    object_repr: Kimley-Horn
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 84
-  fields:
-    action_time: 2019-09-11 16:45:34.247548+00:00
-    user: 1
-    content_type: 1
-    object_id: '17'
-    object_repr: JM Family Enterprises
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 85
-  fields:
-    action_time: 2019-09-11 16:45:34.248668+00:00
-    user: 1
-    content_type: 1
-    object_id: '16'
-    object_repr: Baird
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 86
-  fields:
-    action_time: 2019-09-11 16:45:34.249708+00:00
-    user: 1
-    content_type: 1
-    object_id: '15'
-    object_repr: Orrick
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 87
-  fields:
-    action_time: 2019-09-11 16:45:34.250814+00:00
-    user: 1
-    content_type: 1
-    object_id: '14'
-    object_repr: Quicken Loans
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 88
-  fields:
-    action_time: 2019-09-11 16:45:34.251894+00:00
-    user: 1
-    content_type: 1
-    object_id: '13'
-    object_repr: American Express
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 89
-  fields:
-    action_time: 2019-09-11 16:45:34.252946+00:00
-    user: 1
-    content_type: 1
-    object_id: '12'
-    object_repr: Publix Super Markets
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 90
-  fields:
-    action_time: 2019-09-11 16:45:34.254036+00:00
-    user: 1
-    content_type: 1
-    object_id: '11'
-    object_repr: Stryker
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 91
-  fields:
-    action_time: 2019-09-11 16:45:34.255058+00:00
-    user: 1
-    content_type: 1
-    object_id: '10'
-    object_repr: Boston Consulting Group
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 92
-  fields:
-    action_time: 2019-09-11 16:45:34.256086+00:00
-    user: 1
-    content_type: 1
-    object_id: '9'
-    object_repr: Texas Health Resources
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 93
-  fields:
-    action_time: 2019-09-11 16:45:34.257035+00:00
-    user: 1
-    content_type: 1
-    object_id: '8'
-    object_repr: Ultimate Software
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 94
-  fields:
-    action_time: 2019-09-11 16:45:34.257977+00:00
-    user: 1
-    content_type: 1
-    object_id: '7'
-    object_repr: Edward Jones
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 95
-  fields:
-    action_time: 2019-09-11 16:45:34.258909+00:00
-    user: 1
-    content_type: 1
-    object_id: '6'
-    object_repr: Cisco
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 96
-  fields:
-    action_time: 2019-09-11 16:45:34.259807+00:00
-    user: 1
-    content_type: 1
-    object_id: '5'
-    object_repr: Kimpton Hotels & Restaurants
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 97
-  fields:
-    action_time: 2019-09-11 16:45:34.260713+00:00
-    user: 1
-    content_type: 1
-    object_id: '4'
-    object_repr: Workday
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 98
-  fields:
-    action_time: 2019-09-11 16:45:34.261732+00:00
-    user: 1
-    content_type: 1
-    object_id: '3'
-    object_repr: Wegmans Food Morkets
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 99
-  fields:
-    action_time: 2019-09-11 16:45:34.263310+00:00
-    user: 1
-    content_type: 1
-    object_id: '2'
-    object_repr: Salesforce
-    action_flag: 3
-    change_message: ''
-- model: admin.logentry
-  pk: 100
-  fields:
-    action_time: 2019-09-11 16:45:34.264327+00:00
-    user: 1
-    content_type: 1
-    object_id: '1'
-    object_repr: Hilton
-    action_flag: 3
-    change_message: ''

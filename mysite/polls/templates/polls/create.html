@@ -1,1 +1,9 @@
-HELLO CREATE PAGE
+<h1>Create your Question!</h1>
+<form method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Add Question!">
+</form>
+
+<form action="{% url 'polls:index' %}">
+        <input type="submit" value="Back to polls...">
+    </form>
