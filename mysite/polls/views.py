@@ -1,12 +1,33 @@
 from django.shortcuts import render, get_object_or_404
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.urls import reverse, reverse_lazy
 from django.views import generic
 from django.utils import timezone
 from django.db.models import Count
+from django.db import transaction
 
 from .models import Choice, Question, Company
-from .forms import CreateForm
+from .forms import CreateForm, ChoiceFormSet
+
+
+class AjaxableResponseMixin:
+    def form_invalid(self, form):
+        response = super().form_invalid(form)
+        if self.request.is_ajax():
+            return JsonResponse(form.errors, status=400)
+        else:
+            return response
+
+    def form_valid(self, form):
+        response = super().form_valid(form)
+        if self.request.is_ajax():
+            data = {
+                'pk': self.object.pk,
+            }
+            return JsonResponse(data)
+        else:
+            # print("AHHHH!")
+            return response
 
 
 class IndexView(generic.ListView):
@@ -25,24 +46,46 @@ class IndexView(generic.ListView):
                 ).order_by('-pub_date')[:5]
 
 
-class CreateQuestionView(generic.edit.CreateView):
+class CreateQuestionView(AjaxableResponseMixin, generic.edit.CreateView):
+    '''
+    Some code from this tutorial to aid in adding choices to question view
+    https://dev.to/zxenia/django-inline-formsets-with-class-based-views-and-crispy-forms-14o6
+    Additional elements adapted in:
+        - forms.py
+        - create.html
+        - custom_layout.py
+        - formset.html
+    as well as imported jquery.formset.js for dynamic choice additions
+    '''
     model = Question
     template_name = 'polls/create.html'
-    fields = '__all__'
+    # fields = '__all__'
+    form_class = CreateForm
     success_url = reverse_lazy('polls:index')
 
+    def get_context_data(self, **kwargs):
+        data = super(CreateQuestionView, self).get_context_data(**kwargs)
+        if self.request.POST:
+            data['choices'] = ChoiceFormSet(self.request.POST)
+        else:
+            data['choices'] = ChoiceFormSet()
+        return data
 
-# class UpdateQuestionView(generic.edit.UpdateView):
-#     model = Question
-
-
-# class DeleteQuestionView(generic.edit.DeleteView):
-#     model = Question
-
-
-def create_question(request):
-    form = CreateForm()
-    return render(request, 'polls/create.html', {'form': form})
+    def form_valid(self, form):
+        context = self.get_context_data()
+        choices = context['choices']
+        print(type(choices))
+        with transaction.atomic():
+            self.object = form.save()
+            if choices.is_valid():
+                print('valid choices')
+                choices.instance = self.object
+                choices.save()
+                return HttpResponseRedirect(reverse('polls:index'))
+            else:
+                print('invalid choices')
+        return render(template_name='polls/create.html')
+        # return super(CreateQuestionView, self).form_valid(form)
 
 
 class DetailView(generic.DetailView):

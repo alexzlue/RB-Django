@@ -1,9 +1,24 @@
-<h1>Create your Question!</h1>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+{% load crispy_forms_tags %}
+<!-- <h1>Create your Question!</h1>
 <form method="post">{% csrf_token %}
     {{ form.as_p }}
-    <input type="submit" value="Add Question!">
+
 </form>
+    <input type="submit" value="Add Question!"> -->
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            Create Question
+        </div>
+        <div class="card-body">
+                {% crispy form %}
+        </div>
+    </div>
+</div>
 
 <form action="{% url 'polls:index' %}">
         <input type="submit" value="Back to polls...">
-    </form>
+</form>
