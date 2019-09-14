@@ -7,6 +7,7 @@ from crispy_forms.layout import Layout, Field, Fieldset, Div, HTML,\
 from .custom_layout import *
 from .models import Company, Question, Choice
 from .helper import language_check
+from django.utils.translation import gettext_lazy as _
 
 
 class ChoiceForm(forms.ModelForm):
@@ -16,9 +17,14 @@ class ChoiceForm(forms.ModelForm):
 
 
 class CreateForm(forms.ModelForm):
+    company = forms.CharField(max_length=200)
+
     class Meta:
         model = Question
-        fields = '__all__'
+        fields = ['question_text', 'pub_date']
+        widgets = {
+            'pub_date': forms.SelectDateWidget()
+        }
 
     def __init__(self, *args, **kwargs):
         '''
@@ -34,24 +40,27 @@ class CreateForm(forms.ModelForm):
         self.helper.layout = Layout(
             Div(
                 Field('question_text'),
-                Field('company'),
+                Field('company', id='txtSearch'),
                 Field('pub_date'),
                 Fieldset('Add choices', Formset('choices')),
                 HTML("<br>"),
                 ButtonHolder(Submit('submit', 'Add Question')),
-                )
             )
-    
-    # def clean(self):
-    #     cleaned_data = super().clean()
-    #     print(cleaned_data)
-        # choice_text = cleaned_data['choice_text']
-        # value = language_check(choice_text)
-        # if value[0]:
-        #     print('hotnaohsntho')
-        #     self.add_error('choice_text', value[1])
-            # raise forms.ValidationError(
-            #         'Coarse words like ' + value[1] + ' are not allowed.')
+        )
+
+    def clean(self):
+        cleaned_data = super().clean()
+        company = cleaned_data['company']
+        try:
+            # print(type(Company.objects.get(name=company)))
+            co = Company.objects.get(name=company)
+            print(co.name)
+            # raise forms.ValidationError(str(co) + ' exists!')
+        except:
+            raise forms.ValidationError(company + " is not a valid company.")
+        # cleaned_data['company'] = co.id
+        # print('haonestuh')
+
 
 ChoiceFormSet = forms.inlineformset_factory(Question,
                                             Choice,

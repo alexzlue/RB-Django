@@ -8,26 +8,7 @@ from django.db import transaction
 
 from .models import Choice, Question, Company
 from .forms import CreateForm, ChoiceFormSet
-
-
-class AjaxableResponseMixin:
-    def form_invalid(self, form):
-        response = super().form_invalid(form)
-        if self.request.is_ajax():
-            return JsonResponse(form.errors, status=400)
-        else:
-            return response
-
-    def form_valid(self, form):
-        response = super().form_valid(form)
-        if self.request.is_ajax():
-            data = {
-                'pk': self.object.pk,
-            }
-            return JsonResponse(data)
-        else:
-            # print("AHHHH!")
-            return response
+import json
 
 
 class IndexView(generic.ListView):
@@ -46,7 +27,7 @@ class IndexView(generic.ListView):
                 ).order_by('-pub_date')[:5]
 
 
-class CreateQuestionView(AjaxableResponseMixin, generic.edit.CreateView):
+class CreateQuestionView(generic.edit.CreateView):
     '''
     Some code from this tutorial to aid in adding choices to question view
     https://dev.to/zxenia/django-inline-formsets-with-class-based-views-and-crispy-forms-14o6
@@ -118,3 +99,26 @@ def vote(request, question_id):
         selected_choice.save()
         return HttpResponseRedirect(reverse(
             'polls:results', args=(question.id,)))
+
+
+def autocompleteModel(request):
+    print("AHASNUTHOASUTN")
+    if request.is_ajax():
+        print('OH NO')
+        co = request.GET.get('query', '')
+        search_cos = Company.objects.filter(name__istartswith=co)
+        print(search_cos)
+        results = []
+        for company in search_cos:
+            inp = {}
+            inp['value'] = company.name
+            inp['label'] = company.id
+            # inp['company'] = company
+            print(inp)
+            results.append(inp)
+        data = json.dumps(results)
+    else:
+        data = 'fail'
+    mimetype = 'application/json'
+    print(data)
+    return HttpResponse(data, mimetype)

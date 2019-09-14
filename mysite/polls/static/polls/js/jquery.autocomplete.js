@@ -1,11 +1,4 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" media="all" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!-- {% load static %} -->
-<!-- <script scr="polls/js/jquery.autocomplete.js"></script> -->
-<script>
-    /**
+/**
 *  Ajax Autocomplete for jQuery, version %version%
 *  (c) 2017 Tomas Kirda
 *
@@ -1013,59 +1006,3 @@
         $.fn.autocomplete = $.fn.devbridgeAutocomplete;
     }
 }));
-</script>
-
-<script>
-    $( document ).ready(function() {
-        console.log( "ready!" );
-    });
-</script>
-<!-- <form id="search" method="POST" action="{% url 'polls:index' %}">
-        {% csrf_token %}
-        <input type="text" class="form-control" id="txtSearch" name="txtSearch">
-        <button type="submit" class="btn btn-default btn-submit">Submit</button>
-    </form> -->
-<!-- <div class="ui-widget">
-    <label for="textSearch"> Text</label>
-    <input type="text" class="form-control" id="txtSearch" name="txtSearch">
-</div> -->
-    
-<script>
-    var test = [
-        { value: 'Hilton', data: '101' },
-        { value: 'Wegmans', data: '120' },
-        { value: 'Hilmon', data: '101' },
-        { value: 'Hilcaoeon', data: '101' }
-    ];
-    (function ($){
-        $(document).ready(function(){ 
-        $("#txtSearch").autocomplete({
-            serviceUrl: "ajax_calls/search/",
-            // lookup: test,
-            minChars: 2,
-            open: function(){
-                setTimeout(function () {
-                    $('.ui-autocomplete').css('z-index', 99);
-                }, 0);
-            }
-            });
-    });
-    })(jQuery);
-    
-</script>
-
-{% load crispy_forms_tags %}
-
-<div class="container">
-    <div class="card">
-        <div class="card-header">
-            <h1>Create Question</h1>
-        </div>
-        <div class="card-body">
-                {% crispy form %}
-                <form action="{% url 'polls:index' %}">
-                    <button type="submit" class="btn btn-success">Back to polls...</button>
-                </form>
-        </div>
-    </div>
-</div>
