@@ -9,19 +9,20 @@
                 <h1>Polls Home</h1>
             </div>
             <div class="card-body">
-                    {% if latest_question_list %}
-                        <ul>
-                        {% for question in latest_question_list %}
-                            <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
-                        {% endfor %}
-                        </ul>
-                    {% else %}
-                        <p>No polls are available.</p>
-                    {% endif %}
+                <h3>Last 5 asked questions:</h3>
+                {% if latest_question_list %}
+                    <ol>
+                    {% for question in latest_question_list %}
+                        <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+                    {% endfor %}
+                    </ol>
+                {% else %}
+                    <p>No polls are available.</p>
+                {% endif %}
 
-                    <form action="{% url 'polls:create' %}">
-                            <button type="submit" class="btn btn-success">Create a Question?</button>
-                    </form>
+                <form action="{% url 'polls:create' %}">
+                        <button type="submit" class="btn btn-success">Create a Question?</button>
+                </form>
             </div>
         </div>
     </div>

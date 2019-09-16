@@ -15,7 +15,6 @@ https://dev.to/zxenia/django-inline-formsets-with-class-based-views-and-crispy-f
                             {{ hidden }}
                         {% endfor %}
                     {% endif %}
-                    {{ field.errors.as_ul }}
                     {{ field|as_crispy_field }}
                 </td>
                 {% endfor %}

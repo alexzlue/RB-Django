@@ -1,4 +1,5 @@
 from django import forms
+from django.utils import timezone
 
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout, Field, Fieldset, Div, HTML,\
@@ -6,8 +7,7 @@ from crispy_forms.layout import Layout, Field, Fieldset, Div, HTML,\
 
 from .custom_layout import *
 from .models import Company, Question, Choice
-from .helper import language_check
-from django.utils.translation import gettext_lazy as _
+from .helper import language_filter
 
 
 class ChoiceForm(forms.ModelForm):
@@ -15,16 +15,17 @@ class ChoiceForm(forms.ModelForm):
         model = Choice
         fields = '__all__'
 
+    def clean_choice_text(self):
+        language_filter(self.cleaned_data['choice_text'])
+        return self.cleaned_data['choice_text']
+
 
 class CreateForm(forms.ModelForm):
-    company = forms.CharField(max_length=200)
+    company = forms.CharField()
 
     class Meta:
         model = Question
-        fields = ['question_text', 'pub_date']
-        widgets = {
-            'pub_date': forms.SelectDateWidget()
-        }
+        fields = ['question_text', 'company']
 
     def __init__(self, *args, **kwargs):
         '''
@@ -40,27 +41,23 @@ class CreateForm(forms.ModelForm):
         self.helper.layout = Layout(
             Div(
                 Field('question_text'),
-                Field('company', id='txtSearch'),
-                Field('pub_date'),
+                Field('company', id='autocomplete'),
                 Fieldset('Add choices', Formset('choices')),
                 HTML("<br>"),
                 ButtonHolder(Submit('submit', 'Add Question')),
             )
         )
 
-    def clean(self):
-        cleaned_data = super().clean()
-        company = cleaned_data['company']
+    def clean_company(self):
+        name = self.cleaned_data['company']
         try:
-            # print(type(Company.objects.get(name=company)))
-            co = Company.objects.get(name=company)
-            print(co.name)
-            # raise forms.ValidationError(str(co) + ' exists!')
-        except:
-            raise forms.ValidationError(company + " is not a valid company.")
-        # cleaned_data['company'] = co.id
-        # print('haonestuh')
+            return Company.objects.get(name=name)
+        except Company.DoesNotExist:
+            raise forms.ValidationError(str(name) + " is an invalid company")
 
+    def clean_question_text(self):
+        language_filter(self.cleaned_data['question_text'])
+        return self.cleaned_data['question_text']
 
 ChoiceFormSet = forms.inlineformset_factory(Question,
                                             Choice,
