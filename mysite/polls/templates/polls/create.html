@@ -4,40 +4,15 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 {% load static %}
 <script src="{% static 'polls/js/jquery.autocomplete.js' %}" type="text/javascript"></script>
+<link rel="stylesheet" type="type/css" href="{% static 'polls/style.css' %}">
 
 <script>
-    $( document ).ready(function() {
-        console.log( "ready!" );
-    });
-</script>
-<!-- <form id="search" method="POST" action="{% url 'polls:index' %}">
-        {% csrf_token %}
-        <input type="text" class="form-control" id="txtSearch" name="txtSearch">
-        <button type="submit" class="btn btn-default btn-submit">Submit</button>
-    </form> -->
-<!-- <div class="ui-widget">
-    <label for="textSearch"> Text</label>
-    <input type="text" class="form-control" id="txtSearch" name="txtSearch">
-</div> -->
-    
-<script>
-    var test = [
-        { value: 'Hilton', data: '101' },
-        { value: 'Wegmans', data: '120' },
-        { value: 'Hilmon', data: '101' },
-        { value: 'Hilcaoeon', data: '101' }
-    ];
     (function ($){
         $(document).ready(function(){ 
-        $("#txtSearch").autocomplete({
+        $("#autocomplete").autocomplete({
             serviceUrl: "ajax_calls/search/",
-            // lookup: test,
             minChars: 2,
-            open: function(){
-                setTimeout(function () {
-                    $('.ui-autocomplete').css('z-index', 99);
-                }, 0);
-            }
+            dataType: 'json',
             });
     });
     })(jQuery);

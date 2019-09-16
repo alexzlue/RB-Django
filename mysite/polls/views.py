@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse, reverse_lazy
 from django.views import generic
 from django.utils import timezone
@@ -55,7 +55,6 @@ class CreateQuestionView(generic.edit.CreateView):
     def form_valid(self, form):
         context = self.get_context_data()
         choices = context['choices']
-        print(type(choices))
         with transaction.atomic():
             self.object = form.save()
             if choices.is_valid():
@@ -65,8 +64,8 @@ class CreateQuestionView(generic.edit.CreateView):
                 return HttpResponseRedirect(reverse('polls:index'))
             else:
                 print('invalid choices')
-        return render(template_name='polls/create.html')
-        # return super(CreateQuestionView, self).form_valid(form)
+        print(form)
+        return render(self.request, 'polls/create.html', {'form': form})
 
 
 class DetailView(generic.DetailView):
@@ -102,23 +101,21 @@ def vote(request, question_id):
 
 
 def autocompleteModel(request):
-    print("AHASNUTHOASUTN")
     if request.is_ajax():
-        print('OH NO')
         co = request.GET.get('query', '')
         search_cos = Company.objects.filter(name__istartswith=co)
-        print(search_cos)
         results = []
         for company in search_cos:
             inp = {}
             inp['value'] = company.name
-            inp['label'] = company.id
-            # inp['company'] = company
+            inp['data'] = company.id
             print(inp)
             results.append(inp)
-        data = json.dumps(results)
+        resp = {"suggestions": results}
+        data = json.dumps(resp)
+
     else:
         data = 'fail'
-    mimetype = 'application/json'
+    mimetype = 'json'
     print(data)
     return HttpResponse(data, mimetype)
