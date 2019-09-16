@@ -1,20 +1,11 @@
 import datetime
 
 from django.db import models
-from django.core.exceptions import ValidationError
 from django.utils import timezone
-from django.utils.translation import gettext_lazy as _
 from django.db.models.signals import pre_save
 from django.dispatch import receiver
 
-from .helper import language_check
-
-
-def language_filter(text):
-    value = language_check(text)
-    if value[0]:
-        raise ValidationError(_(
-                'Coarse words like ' + value[1] + ' are not allowed.'))
+from .helper import language_filter
 
 
 class Company(models.Model):
@@ -32,7 +23,7 @@ class Company(models.Model):
 
     def __str__(self):
         return self.name
-    
+
     class Meta:
         verbose_name_plural = 'companies'
 
@@ -40,7 +31,7 @@ class Company(models.Model):
 class Question(models.Model):
     company = models.ForeignKey(Company, on_delete=models.CASCADE)
     question_text = models.CharField(max_length=200)
-    pub_date = models.DateTimeField('date published')
+    pub_date = models.DateTimeField('date published', default=timezone.now)
 
     def was_published_recently(self):
         now = timezone.now()
