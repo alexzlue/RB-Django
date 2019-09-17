@@ -1,5 +1,4 @@
 from django import forms
-from django.utils import timezone
 
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout, Field, Fieldset, Div, HTML,\
@@ -9,8 +8,15 @@ from .custom_layout import *
 from .models import Company, Question, Choice
 from .helper import language_filter
 
+CHOICE_FORM_SET = forms.inlineformset_factory(Question,
+                                              Choice,
+                                              form=ChoiceForm,
+                                              fields=['choice_text'],
+                                              extra=3)
+
 
 class ChoiceForm(forms.ModelForm):
+    ''' Form for choices '''
     class Meta:
         model = Choice
         fields = '__all__'
@@ -21,6 +27,7 @@ class ChoiceForm(forms.ModelForm):
 
 
 class CreateForm(forms.ModelForm):
+    ''' Form that will iclude formset to create question'''
     company = forms.CharField()
 
     class Meta:
@@ -58,9 +65,3 @@ class CreateForm(forms.ModelForm):
     def clean_question_text(self):
         language_filter(self.cleaned_data['question_text'])
         return self.cleaned_data['question_text']
-
-ChoiceFormSet = forms.inlineformset_factory(Question,
-                                            Choice,
-                                            form=ChoiceForm,
-                                            fields=['choice_text'],
-                                            extra=3)

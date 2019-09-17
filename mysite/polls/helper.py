@@ -9,8 +9,8 @@ FORTUNE = 'polls/import_data.yaml'
 def language_filter(text):
     value = language_check(text)
     if value[0]:
-        raise ValidationError(_(
-                'Coarse words like ' + value[1] + ' are not allowed.'))
+        raise ValidationError(_('Coarse words like ' +
+                                value[1] + ' are not allowed.'))
 
 
 def load_yaml_blacklist():

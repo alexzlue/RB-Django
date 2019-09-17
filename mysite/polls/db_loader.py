@@ -11,5 +11,5 @@ def load_companies():
     company_list = load_yaml_fortune()
     for company in company_list:
         now = timezone.now()
-        c = Company(name=company, type='B2A', created_at=now, updated_at=now)
-        c.save()
+        co = Company(name=company, type='B2A', created_at=now, updated_at=now)
+        co.save()

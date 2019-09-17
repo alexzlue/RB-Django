@@ -7,7 +7,7 @@ from django.db.models import Count
 from django.db import transaction
 
 from .models import Choice, Question, Company
-from .forms import CreateForm, ChoiceFormSet
+from .forms import CreateForm, CHOICE_FORM_SET
 import json
 
 
@@ -47,9 +47,9 @@ class CreateQuestionView(generic.edit.CreateView):
     def get_context_data(self, **kwargs):
         data = super(CreateQuestionView, self).get_context_data(**kwargs)
         if self.request.POST:
-            data['choices'] = ChoiceFormSet(self.request.POST)
+            data['choices'] = CHOICE_FORM_SET(self.request.POST)
         else:
-            data['choices'] = ChoiceFormSet()
+            data['choices'] = CHOICE_FORM_SET()
         return data
 
     def form_valid(self, form):

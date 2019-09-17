@@ -19,9 +19,9 @@ class QuestionInline(admin.TabularInline):
 class QuestionAdmin(admin.ModelAdmin):
     model = Question
     fieldsets = [
-        (None,               {'fields': ['question_text']}),
+        (None, {'fields': ['question_text']}),
         ('Date information', {'fields': ['pub_date']}),
-        ('Company',          {'fields': ['company']})
+        ('Company', {'fields': ['company']})
     ]
     inlines = [ChoiceInline]
     list_filter = ['pub_date']

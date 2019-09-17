@@ -9,6 +9,7 @@ from .helper import language_filter
 
 
 class Company(models.Model):
+    ''' Company model '''
     BUSINESS_TYPES = (
         ('B2B', 'Business-to-Business'),
         ('B2C', 'Business-to-Consumer'),
@@ -29,6 +30,7 @@ class Company(models.Model):
 
 
 class Question(models.Model):
+    ''' Question model '''
     company = models.ForeignKey(Company, on_delete=models.CASCADE)
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published', default=timezone.now)
@@ -48,6 +50,7 @@ class Question(models.Model):
 
 
 class Choice(models.Model):
+    ''' Choice model '''
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
     choice_text = models.CharField(max_length=200)
     votes = models.IntegerField(default=0)
