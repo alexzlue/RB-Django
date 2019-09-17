@@ -5,7 +5,7 @@ from . import views
 
 app_name = 'polls'
 urlpatterns = [
-    path('create/ajax_calls/search/', views.autocompleteModel),
+    path('create/ajax_calls/search/', views.autocomplete_model),
     path('', views.IndexView.as_view(), name='index'),
     path('<int:pk>/', views.DetailView.as_view(), name='detail'),
     path('<int:pk>/results/', views.ResultsView.as_view(), name='results'),

@@ -53,17 +53,16 @@ class CreateQuestionView(generic.edit.CreateView):
         return data
 
     def form_valid(self, form):
-        
         context = self.get_context_data()
         choices = context['choices']
-        with transaction.atomic():
-            if choices.is_valid():
+        if choices.is_valid():
+            with transaction.atomic():
                 self.object = form.save()
                 print('valid choices')
                 choices.instance = self.object
                 choices.save()
-            else:
-                return super(CreateQuestionView, self).form_invalid(form)
+        else:
+            return super(CreateQuestionView, self).form_invalid(form)
         return super(CreateQuestionView, self).form_valid(form)
 
 
@@ -99,7 +98,7 @@ def vote(request, question_id):
             'polls:results', args=(question.id,)))
 
 
-def autocompleteModel(request):
+def autocomplete_model(request):
     if request.is_ajax():
         co = request.GET.get('query', '')
         search_cos = Company.objects.filter(name__istartswith=co)
@@ -108,13 +107,10 @@ def autocompleteModel(request):
             inp = {}
             inp['value'] = company.name
             inp['data'] = company.id
-            print(inp)
             results.append(inp)
         resp = {"suggestions": results}
         data = json.dumps(resp)
-
     else:
         data = 'fail'
     mimetype = 'json'
-    print(data)
     return HttpResponse(data, mimetype)
