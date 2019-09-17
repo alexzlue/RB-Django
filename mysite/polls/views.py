@@ -61,11 +61,7 @@ class CreateQuestionView(generic.edit.CreateView):
                 print('valid choices')
                 choices.instance = self.object
                 choices.save()
-                return HttpResponseRedirect(reverse('polls:index'))
-            else:
-                print('invalid choices')
-        print(form)
-        return render(self.request, 'polls/create.html', {'form': form})
+        return super(CreateQuestionView, self).form_valid(form)
 
 
 class DetailView(generic.DetailView):
