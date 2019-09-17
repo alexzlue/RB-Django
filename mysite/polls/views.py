@@ -53,14 +53,17 @@ class CreateQuestionView(generic.edit.CreateView):
         return data
 
     def form_valid(self, form):
+        
         context = self.get_context_data()
         choices = context['choices']
         with transaction.atomic():
-            self.object = form.save()
             if choices.is_valid():
+                self.object = form.save()
                 print('valid choices')
                 choices.instance = self.object
                 choices.save()
+            else:
+                return super(CreateQuestionView, self).form_invalid(form)
         return super(CreateQuestionView, self).form_valid(form)
 
 
