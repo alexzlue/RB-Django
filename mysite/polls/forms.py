@@ -8,12 +8,6 @@ from .custom_layout import *
 from .models import Company, Question, Choice
 from .helper import language_filter
 
-CHOICE_FORM_SET = forms.inlineformset_factory(Question,
-                                              Choice,
-                                              form=ChoiceForm,
-                                              fields=['choice_text'],
-                                              extra=3)
-
 
 class ChoiceForm(forms.ModelForm):
     ''' Form for choices '''
@@ -65,3 +59,9 @@ class CreateForm(forms.ModelForm):
     def clean_question_text(self):
         language_filter(self.cleaned_data['question_text'])
         return self.cleaned_data['question_text']
+
+CHOICE_FORM_SET = forms.inlineformset_factory(Question,
+                                              Choice,
+                                              form=ChoiceForm,
+                                              fields=['choice_text'],
+                                              extra=3)
