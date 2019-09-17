@@ -58,7 +58,6 @@ class CreateQuestionView(generic.edit.CreateView):
         if choices.is_valid():
             with transaction.atomic():
                 self.object = form.save()
-                print('valid choices')
                 choices.instance = self.object
                 choices.save()
         else:
