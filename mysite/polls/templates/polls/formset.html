@@ -5,6 +5,10 @@ https://dev.to/zxenia/django-inline-formsets-with-class-based-views-and-crispy-f
 <table>
 {{ formset.management_form|crispy }}
 
+{% for err in formset.non_form_errors %}
+<strong style="color:red;">{{ err }}</strong>
+{% endfor %}
+
     {% for form in formset.forms %}
             <tr class="{% cycle 'row1' 'row2' %} formset_row-{{ formset.prefix }}">
                 {% for field in form.visible_fields %}
