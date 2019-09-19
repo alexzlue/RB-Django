@@ -1,25 +1,39 @@
 import datetime
 
 from django.db import models
-from django.core.exceptions import ValidationError
 from django.utils import timezone
-from django.utils.translation import gettext_lazy as _
 from django.db.models.signals import pre_save
 from django.dispatch import receiver
 
-from .helper import language_check
+from .helper import language_filter
 
 
-def language_filter(text):
-    value = language_check(text)
-    if value[0]:
-        raise ValidationError(_(
-                'Coarse words like ' + value[1] + ' are not allowed.'))
+class Company(models.Model):
+    ''' Company model '''
+    BUSINESS_TYPES = (
+        ('B2B', 'Business-to-Business'),
+        ('B2C', 'Business-to-Consumer'),
+        ('B2A', 'Business-to-Anyone')
+    )
+    name = models.CharField(max_length=50)
+    description = models.CharField(
+        max_length=200, default=None, null=True, blank=True)
+    type = models.CharField(max_length=3, choices=BUSINESS_TYPES)
+    created_at = models.DateTimeField('date created')
+    updated_at = models.DateField('date updated')
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name_plural = 'companies'
 
 
 class Question(models.Model):
+    ''' Question model '''
+    company = models.ForeignKey(Company, on_delete=models.CASCADE)
     question_text = models.CharField(max_length=200)
-    pub_date = models.DateTimeField('date published')
+    pub_date = models.DateTimeField('date published', default=timezone.now)
 
     def was_published_recently(self):
         now = timezone.now()
@@ -36,6 +50,7 @@ class Question(models.Model):
 
 
 class Choice(models.Model):
+    ''' Choice model '''
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
     choice_text = models.CharField(max_length=200)
     votes = models.IntegerField(default=0)

@@ -1,0 +1,800 @@
+- model: polls.company
+  pk: 101
+  fields:
+    name: Hilton
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.650278+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 102
+  fields:
+    name: Salesforce
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.681646+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 103
+  fields:
+    name: Wegmans Food Morkets
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.682651+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 104
+  fields:
+    name: Workday
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.683576+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 105
+  fields:
+    name: Kimpton Hotels & Restaurants
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.684506+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 106
+  fields:
+    name: Cisco
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.685495+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 107
+  fields:
+    name: Edward Jones
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.686386+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 108
+  fields:
+    name: Ultimate Software
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.687478+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 109
+  fields:
+    name: Texas Health Resources
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.688698+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 110
+  fields:
+    name: Boston Consulting Group
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.689775+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 111
+  fields:
+    name: Stryker
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.690873+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 112
+  fields:
+    name: Publix Super Markets
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.691917+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 113
+  fields:
+    name: American Express
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.692910+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 114
+  fields:
+    name: Quicken Loans
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.693890+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 115
+  fields:
+    name: Orrick
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.694888+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 116
+  fields:
+    name: Baird
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.696011+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 117
+  fields:
+    name: JM Family Enterprises
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.697227+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 118
+  fields:
+    name: Kimley-Horn
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.698291+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 119
+  fields:
+    name: Comden Property Trust
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.699388+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 120
+  fields:
+    name: Cooley
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.700222+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 121
+  fields:
+    name: Plante Moran
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.700985+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 122
+  fields:
+    name: Adobe
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.701789+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 123
+  fields:
+    name: Veterans United Home Loans
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.702832+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 124
+  fields:
+    name: Intuit
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.703809+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 125
+  fields:
+    name: The Cheesecake Factory
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.704790+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 126
+  fields:
+    name: Deloitte
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.705867+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 127
+  fields:
+    name: Pinnacle Financial Partners
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.706922+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 128
+  fields:
+    name: SAP America
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.707925+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 129
+  fields:
+    name: Navy Federal Credit Union
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.708914+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 130
+  fields:
+    name: USAA
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.709832+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 131
+  fields:
+    name: Marriott International
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.710567+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 132
+  fields:
+    name: Hyatt Hotels
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.711317+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 133
+  fields:
+    name: CarMax
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.712145+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 134
+  fields:
+    name: EY
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.713174+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 135
+  fields:
+    name: Southern Ohio Medical Center
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.714142+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 136
+  fields:
+    name: KPMG
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.715100+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 137
+  fields:
+    name: BayCare Health System
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.716053+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 138
+  fields:
+    name: NVIDIA
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.716950+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 139
+  fields:
+    name: Capital One Financial
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.717719+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 140
+  fields:
+    name: Baptist Health South Florida
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.718738+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 141
+  fields:
+    name: David Weekley Homes
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.719716+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 142
+  fields:
+    name: Dropbox
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.720708+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 143
+  fields:
+    name: Allianz Life Insurance Co. of North America
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.721633+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 144
+  fields:
+    name: PricewaterhouseCoopers
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.722573+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 145
+  fields:
+    name: Genentech
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.723580+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 146
+  fields:
+    name: REI
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.727299+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 147
+  fields:
+    name: Protiviti
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.729051+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 148
+  fields:
+    name: Slalom
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.734731+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 149
+  fields:
+    name: T-Mobile US
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.736100+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 150
+  fields:
+    name: Red Hat
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.739840+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 151
+  fields:
+    name: Synchrony Financial
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.742749+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 152
+  fields:
+    name: Ryan
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.743802+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 153
+  fields:
+    name: Alston & Bird
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.744806+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 154
+  fields:
+    name: Encompass Health Home Health & Hospice
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.745865+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 155
+  fields:
+    name: American Fidelity Assurance Company
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.747096+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 156
+  fields:
+    name: Word Wide Technology
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.748394+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 157
+  fields:
+    name: Nationwide
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.749435+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 158
+  fields:
+    name: St. Jude Children's Research Hospital
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.750620+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 159
+  fields:
+    name: Credit Acceptance
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.751657+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 160
+  fields:
+    name: SAS Institute
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.752636+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 161
+  fields:
+    name: Accenture
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.753661+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 162
+  fields:
+    name: Goldman Sachs Group
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.754621+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 163
+  fields:
+    name: AbbVie
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.756042+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 164
+  fields:
+    name: HubSpot
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.757248+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 165
+  fields:
+    name: Oliver Wyman Group
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.758231+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 166
+  fields:
+    name: Bright Horizons Family Solutions
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.759284+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 167
+  fields:
+    name: CHG Healthcare
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.760313+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 168
+  fields:
+    name: Crowe
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.761295+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 169
+  fields:
+    name: Zillow Group
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.762326+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 170
+  fields:
+    name: Atlassian
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.763230+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 171
+  fields:
+    name: Comcast NBCUniversal
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.764150+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 172
+  fields:
+    name: Hyland
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.765201+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 173
+  fields:
+    name: Cadence Design Systems
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.766338+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 174
+  fields:
+    name: Perkins Coie
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.767610+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 175
+  fields:
+    name: Regeneron Pharmaceuticals
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.768714+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 176
+  fields:
+    name: Progressive
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.769783+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 177
+  fields:
+    name: Power Home Remodeling
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.770704+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 178
+  fields:
+    name: Kronos
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.771668+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 179
+  fields:
+    name: Children's Healthcare of Atlanta
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.772600+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 180
+  fields:
+    name: Workiva
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.773654+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 181
+  fields:
+    name: Nugget Market
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.774565+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 182
+  fields:
+    name: Burns & McDonnell
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.775473+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 183
+  fields:
+    name: First American Financial Corp.
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.776355+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 184
+  fields:
+    name: Total Quality Logistics
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.777243+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 185
+  fields:
+    name: Sheetz
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.778269+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 186
+  fields:
+    name: Custom Ink
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.779150+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 187
+  fields:
+    name: Atlantic Health System
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.780043+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 188
+  fields:
+    name: Methodist Le Bonheur Healthcare
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.780922+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 189
+  fields:
+    name: Four Seasons Hotels & Resorts
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.781802+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 190
+  fields:
+    name: Novo Nordisk
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.782706+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 191
+  fields:
+    name: Farmers Insurance
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.783597+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 192
+  fields:
+    name: Bank of America
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.784482+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 193
+  fields:
+    name: Box
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.785360+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 194
+  fields:
+    name: Alliance Data Systems
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.786231+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 195
+  fields:
+    name: FedEx
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.787085+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 196
+  fields:
+    name: Activision Blizzard
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.788142+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 197
+  fields:
+    name: Delta Air Lines
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.789077+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 198
+  fields:
+    name: Mars
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.790074+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 199
+  fields:
+    name: OhioHealth
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.791093+00:00
+    updated_at: 2019-09-11
+- model: polls.company
+  pk: 200
+  fields:
+    name: Patagonia
+    description: null
+    type: B2A
+    created_at: 2019-09-11 23:48:53.800179+00:00
+    updated_at: 2019-09-11

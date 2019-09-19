@@ -1,6 +1,16 @@
 import yaml
+from django.utils.translation import gettext_lazy as _
+from django.core.exceptions import ValidationError
 
 BLACKLISTED_WORDS = 'polls/blacklist.yaml'
+FORTUNE = 'polls/import_data.yaml'
+
+
+def language_filter(text):
+    value = language_check(text)
+    if value[0]:
+        raise ValidationError(_('Coarse words like ' +
+                                value[1] + ' are not allowed.'))
 
 
 def load_yaml_blacklist():
@@ -14,6 +24,19 @@ def load_yaml_blacklist():
             print(e)
 
     return blacklist
+
+
+def load_yaml_fortune():
+    '''
+    loads fortune 100 list into a set and returns
+    '''
+    with open(FORTUNE, 'r') as f:
+        try:
+            fortune_list = yaml.safe_load(f)['fortune-100-companies']
+        except yaml.YAMLError as e:
+            print(e)
+
+    return fortune_list
 
 
 def language_check(sentence):
