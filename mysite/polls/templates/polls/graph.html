@@ -6,11 +6,11 @@
 
 <style>
   .bar{
-    fill: steelblue;
+    fill: rgb(93, 167, 228);
   }
 
   .bar:hover{
-    fill: brown;
+    fill: rgb(250, 152, 135);
   }
 
 	.axis {
@@ -30,7 +30,7 @@
         <div class="card-header">
           <h1>{{question.question_text}}</h1>
         </div>
-        <div class="card-body">
+        <div class="card-body" id='chart_container'>
             <script>
                 // load values into js variables
                 var question = '{{ question.question_text }}';
@@ -49,9 +49,100 @@
                 console.log(choice_texts);
                 console.log(choice_votes);
                 console.log(choices);
+                // function width_win(){
+                //   var cont_width = document.getElementById('chart_container').clientWidth;
+                //   console.log(cont_width);
+                // }
+                // window.addEventListener('resize', width_win)
+                
+              </script>
+
+              <script>
+                var margin = {top: 30, right: 50, bottom: 30, left: 50},
+                    width,
+                    height = 400 - margin.top - margin.bottom;
+                
+                // scale range
+                var x = d3.scale.ordinal()
+                var y = d3.scale.linear().range([height, 0]);
+
+                // axes
+                var xAxis = d3.svg.axis()
+                    .scale(x)
+                    .orient("bottom");
+                var yAxis = d3.svg.axis()
+                    .scale(y)
+                    .orient("left");
+                
+                var svg = d3.select('.card-body')
+                      .append('svg')
+                        .attr('height', height + margin.top + margin.bottom);
+                
+                var artboard = svg.append('g')
+                      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+                
+                choices.forEach(function(d){
+                  d.text = d.text;
+                  d.votes = +d.votes;
+                });
+
+                // set domain & range
+                x.domain(choices.map(function(d) { return d.text; }));
+                y.domain([0, d3.max(choices, function(d) { return d.votes; })]);
+
+                // add x-y axis
+                var xA = artboard.append('g')
+                    .attr("class", "x axis")
+                    .attr("transform", "translate(0,"+ height+")")
+                  
+                var yA = artboard.append('g')
+                    .attr("class", "y axis")
+                    .call(yAxis)
+                  .append("text")
+                    .attr('transform', "rotate(90) translate(" + Math.floor(height/2) + "," + Math.floor(margin.left/2) +")")
+                    .attr("y", 5)
+                    .attr("dy", ".71em")
+                    .style("text-anchor", "end")
+                    .text("num votes");
+                
+                function drawChart() {
+                  // d3.selectAll("rect").remove();
+                  width = parseInt(d3.select('#chart_container').style('width'), 10) - margin.left - margin.right;
+
+                  // set svg dim
+                  svg.attr("width", width + margin.left + margin.right);
+
+                  // set new range x scale
+                  x.rangeRoundBands([0, width], .05);
+
+                  // give axis resized scale
+                  xAxis.scale(x);
+
+                  // draw new xAxis
+                  xA.call(xAxis)
+
+                  var bars = svg.selectAll(".bar")
+                      .data(choices);
+
+                  bars
+                    .enter().append("rect")
+                      .attr("transform", 'translate(' + margin.left + ',' + margin.bottom + ')')
+                      .attr("class", "bar")
+                  bars
+                      .attr("y", function(d) { return y(d.votes); })
+                      .attr("height", function(d) { return height - y(d.votes); })
+                      .attr("width", x.rangeBand())
+                      .attr("x", function(d) { return x(d.text); });
+                  
+                      // bars.exit().remove();
+                }
+
+                drawChart();
+
+                window.addEventListener('resize', drawChart);
               </script>
           
-              <script>
+              <!-- <script>
                 // console.log(choice_votes);
                 var margin = { top: 20, right: 20, bottom: 70, left: 40 };
                 var width = 600 - margin.left - margin.right;
@@ -117,7 +208,7 @@
                     .attr("width", x.rangeBand())
                     .attr("y", function(d) { return y(d.votes); })
                     .attr("height", function(d) { return height - y(d.votes); });
-              </script>
+              </script> -->
             
             <form action="{% url 'polls:detail' question.id %}">
                 <button type="submit" class="btn btn-success" id="continue_css">Back to voting</button>
