@@ -136,16 +136,14 @@
             </div>
 
             <script>
-              // colors to change. uses interpolate to associate a choices with a color 
+              // colors to change. uses a range to associate a choice with a color 
               // over the selected color range
               var colors = {
                 "default": d3.scale.linear().domain([1,choices.length])
-                              .interpolate(d3.interpolateHcl)
-                              .range([d3.rgb("#5da7e4"), d3.rgb("#9aedda")]),
+                              .range(["rgb(93, 167, 228)", "rgb(154, 237, 218)"]),
 
                 "hAwT DaUg": d3.scale.linear().domain([1,choices.length])
-                              .interpolate(d3.interpolateHcl)
-                              .range([d3.rgb("#ff5d52"), d3.rgb("#fdff7d")]),
+                              .range(["rgb(255, 94, 82)", "rgb(253, 255, 125)"]),
               }
 
               d3.select('#color-select').on('change', function() {
