@@ -5,13 +5,10 @@
 <link rel="stylesheet" type="type/css" href="{% static 'polls/buttons.css' %}">
 
 <style>
-  .bar{
-    fill: rgb(93, 167, 228);
-  }
-
+  /*
   .bar:hover{
     fill: rgb(250, 152, 135);
-  }
+  } */
 
 	.axis {
 	  font: 10px sans-serif;
@@ -34,27 +31,15 @@
             <script>
                 // load values into js variables
                 var question = '{{ question.question_text }}';
-                choice_texts = []
-                choice_votes = []
                 choices = []
+
                 {% for choice in choices %}
                   var text = "{{ choice.choice_text }}", votes = {{ choice.votes }};
                   choices.push({
                     'text': text,
                     'votes': votes
                   });
-                  choice_texts.push(text);
-                  choice_votes.push(votes);
                 {% endfor %}
-                console.log(choice_texts);
-                console.log(choice_votes);
-                console.log(choices);
-                // function width_win(){
-                //   var cont_width = document.getElementById('chart_container').clientWidth;
-                //   console.log(cont_width);
-                // }
-                // window.addEventListener('resize', width_win)
-                
               </script>
 
               <script>
@@ -103,10 +88,9 @@
                     .attr("y", 5)
                     .attr("dy", ".71em")
                     .style("text-anchor", "end")
-                    .text("num votes");
+                    .text("num votes")
                 
                 function drawChart() {
-                  // d3.selectAll("rect").remove();
                   width = parseInt(d3.select('#chart_container').style('width'), 10) - margin.left - margin.right;
 
                   // set svg dim
@@ -133,85 +117,58 @@
                       .attr("height", function(d) { return height - y(d.votes); })
                       .attr("width", x.rangeBand())
                       .attr("x", function(d) { return x(d.text); });
-                  
-                      // bars.exit().remove();
+
                 }
 
                 drawChart();
 
                 window.addEventListener('resize', drawChart);
-              </script>
-          
-              <!-- <script>
-                // console.log(choice_votes);
-                var margin = { top: 20, right: 20, bottom: 70, left: 40 };
-                var width = 600 - margin.left - margin.right;
-                var height = 300 - margin.top - margin.bottom;
-          
-                // set the ranges
-                var x = d3.scale.ordinal().rangeRoundBands([0, width], .05);
-          
-                var y = d3.scale.linear().range([height, 0]);
-          
-                var xAxis = d3.svg.axis()
-                    .scale(x)
-                    .orient("bottom")
-                var yAxis = d3.svg.axis()
-                    .scale(y)
-                    .orient("left")
-                    .ticks(10)
-                
-                // add the SVG elemnt
-                var svg = d3.select('.card-body').append('svg')
-                      .attr("width", width + margin.left + margin.right)
-                      .attr("height", height + margin.top + margin.bottom)
-                    .append("g")
-                      .attr("transform",
-                            "translate(" + margin.left + "," + margin.top + ")");
-                
-                choices.forEach(function(d){
-                  d.text = d.text;
-                  d.votes = +d.votes;
-                });
-          
-                // scale the range of the data
-                x.domain(choices.map(function(d) { return d.text; }));
-                y.domain([0, d3.max(choices, function(d) { return d.votes; })]);
-          
-                //add axis
-                svg.append("g")
-                    .attr("class", "x axis")
-                    .attr("transform", "translate(0,"+ height+")")
-                    .call(xAxis)
-                  .selectAll("text")
-                    .style("text-anchor", "end")
-                    .attr("dx", "-.8em")
-                    .attr("dy", "-.55em")
-                    .attr("transform", "rotate(-90)");
-                
-                svg.append("g")
-                    .attr("class", "y axis")
-                    .call(yAxis)
-                  .append("text")
-                    .attr("transform", "rotate(-90)")
-                    .attr("y", 5)
-                    .attr("dy", ".71em")
-                    .style("text-anchor", "end")
-                    .text("num votes");
-                
-                // add bar chart
-                svg.selectAll("bar")
-                    .data(choices)
-                  .enter().append("rect")
-                    .attr("class", "bar")
-                    .attr("x", function(d) { return x(d.text); })
-                    .attr("width", x.rangeBand())
-                    .attr("y", function(d) { return y(d.votes); })
-                    .attr("height", function(d) { return height - y(d.votes); });
-              </script> -->
+            </script>
+
+            <div id="controls" style="text-align: center;">
+                <label for="color-select">
+                    Select Color Scale:
+                </label>
+                <select id="color-select">
+                    <option class="dropdown-item" value="default">default</option>
+                    <option class="dropdown-item" value="hAwT DaUg">hAwT DaUg</option>
+                </select>
+            </div>
+
+            <script>
+              // colors to change. uses interpolate to associate a choices with a color 
+              // over the selected color range
+              var colors = {
+                "default": d3.scale.linear().domain([1,choices.length])
+                              .interpolate(d3.interpolateHcl)
+                              .range([d3.rgb("#5da7e4"), d3.rgb("#9aedda")]),
+
+                "hAwT DaUg": d3.scale.linear().domain([1,choices.length])
+                              .interpolate(d3.interpolateHcl)
+                              .range([d3.rgb("#ff5d52"), d3.rgb("#fdff7d")]),
+              }
+
+              d3.select('#color-select').on('change', function() {
+                var color_val = d3.select(this).node().value;
+                update_color_scheme(colors[color_val]);
+              });
+
+              function update_color_scheme(scheme){
+                var i = 1
+                d3.selectAll(".bar")
+                  .each(function(d) {
+                    d3.select(this).style("fill",scheme(i));
+                    i+=1;
+                  })
+              }
+
+              // default color scheme
+              update_color_scheme(colors["default"])
+
+            </script>
             
-            <form action="{% url 'polls:detail' question.id %}">
-                <button type="submit" class="btn btn-success" id="continue_css">Back to voting</button>
+            <form action="{% url 'polls:results' question.id %}">
+                <button type="submit" class="btn btn-success" id="continue_css">Back to results</button>
             </form>
             
             <form action="{% url 'polls:index' %}">
