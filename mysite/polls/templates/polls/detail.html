@@ -18,10 +18,6 @@
                     {% endfor %}
                     <button type="submit" class="btn btn-success" id="continue_css">Vote!</button>
                 </form>
-
-                <form action="{% url 'polls:graph' question.id %}">
-                    <button type="submit" class="btn" id="graph_css">View Graph</button>
-                </form>
                     
                 <form action="{% url 'polls:index' %}">
                     <button type="submit" class="btn btn-success" id="back_css">Back to polls...</button>
