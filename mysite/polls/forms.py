@@ -48,7 +48,8 @@ class CreateForm(forms.ModelForm):
                 Field('company', id='autocomplete'),
                 Fieldset('Add choices', Formset('choices')),
                 HTML("<br>"),
-                ButtonHolder(Submit('submit', 'Add Question')),
+                ButtonHolder(Submit(
+                    'submit', 'Add Question', css_id='continue_css')),
             )
         )
 
