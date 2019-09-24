@@ -81,6 +81,15 @@ class ResultsView(generic.DetailView):
     template_name = 'polls/results.html'
 
 
+def graph_view(request, question_id):
+    question = get_object_or_404(Question, pk=question_id)
+    choice = []
+    for ch in question.choice_set.all():
+        choice.append(ch)
+    return render(request, 'polls/graph.html', {'question': question,
+                                                'choices': choice})
+
+
 def vote(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
     try:
