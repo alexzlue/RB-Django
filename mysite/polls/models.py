@@ -34,6 +34,7 @@ class Question(models.Model):
     company = models.ForeignKey(Company, on_delete=models.CASCADE)
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published', default=timezone.now)
+    processed = models.BooleanField(default=False)
 
     def was_published_recently(self):
         now = timezone.now()
