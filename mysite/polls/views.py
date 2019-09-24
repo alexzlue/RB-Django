@@ -8,7 +8,7 @@ from django.db import transaction
 
 from .models import Choice, Question, Company
 from .forms import CreateForm, CHOICE_FORM_SET
-from .tasks import survey_submit_email_task
+from .tasks import survey_submit_email_task, process_form_task
 import json
 
 
@@ -65,6 +65,7 @@ class CreateQuestionView(generic.edit.CreateView):
             return super(CreateQuestionView, self).form_invalid(form)
         survey_submit_email_task.delay(form.cleaned_data['question_text'],
                                        form.cleaned_data['company'].name)
+        process_form_task.delay(self.object.id)
         return super(CreateQuestionView, self).form_valid(form)
 
 
