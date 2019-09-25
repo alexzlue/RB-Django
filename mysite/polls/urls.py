@@ -5,6 +5,7 @@ from . import views
 
 app_name = 'polls'
 urlpatterns = [
+    path('auto_refresh/', views.ajax_refresh),
     path('<int:question_id>/graph/', views.graph_view, name='graph'),
     path('create/ajax_calls/search/', views.autocomplete_model),
     path('', views.IndexView.as_view(), name='index'),

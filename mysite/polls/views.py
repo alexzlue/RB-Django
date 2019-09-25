@@ -126,3 +126,25 @@ def autocomplete_model(request):
         data = 'fail'
     mimetype = 'json'
     return HttpResponse(data, mimetype)
+
+
+def ajax_refresh(request):
+    if request.is_ajax():
+        resp = []
+        question_set = Question.objects.annotate(
+                    choice_count=Count('choice')).filter(
+                        choice_count__gt=0,
+                        pub_date__lte=timezone.now()
+                        ).order_by('-pub_date')[:5]
+        for q in question_set:
+            qstn = {
+                'text': q.question_text,
+                'id': q.id,
+                'processed': q.processed,
+            }
+            resp.append(qstn)
+        data = json.dumps(resp)
+    else:
+        data = 'fail'
+    mimetype = 'application/json'
+    return HttpResponse(data, mimetype)
