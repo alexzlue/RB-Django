@@ -1,25 +1,28 @@
 from django.conf import settings
 from django.core.mail import EmailMessage
 from django.template import Context
-# from django.template.loader import render_to_string
+from django.contrib.auth.models import User
 from celery.utils.log import get_task_logger
 
-SEND_TO_EMAIL = 'alue@raybeam.com'
 LOGGER = get_task_logger(__name__)
 
 
 def survey_submit_email(question, co_name):
-    email_body = '''Hello Admin,
+    email_body = '''Hello Admin {0},
 
-    A user posted a new question for {0}!
+    A user posted a new question for {1}!
 
-    Question: {1}
+    Question: {2}
 
-    -- your friendly email bot'''.format(co_name, question)
+    -- your friendly email bot'''
 
-    email = EmailMessage(
-        "New Survey!", email_body,
-        to=[SEND_TO_EMAIL]
-    )
+    for admin in User.objects.filter(is_superuser=True):
+        admin_body = email_body.format(admin.username,
+                                       co_name,
+                                       question)
 
-    return email.send(fail_silently=False)
+        email = EmailMessage(
+            "New Survey!", admin_body,
+            to=[admin.email]
+        )
+        email.send(fail_silently=False)
