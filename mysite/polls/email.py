@@ -4,7 +4,7 @@ from django.template import Context
 # from django.template.loader import render_to_string
 from celery.utils.log import get_task_logger
 
-SEND_TO_EMAIL = 'recipient@testemail.com'
+SEND_TO_EMAIL = 'alue@raybeam.com'
 LOGGER = get_task_logger(__name__)
 
 
@@ -19,7 +19,7 @@ def survey_submit_email(question, co_name):
 
     email = EmailMessage(
         "New Survey!", email_body,
-        settings.DEFAULT_FROM_EMAIL, [SEND_TO_EMAIL]
+        to=[SEND_TO_EMAIL]
     )
 
     return email.send(fail_silently=False)
