@@ -8,6 +8,7 @@ from django.db import transaction
 
 from .models import Choice, Question, Company
 from .forms import CreateForm, CHOICE_FORM_SET
+from .tasks import survey_submit_email_task, process_form_task
 import json
 
 
@@ -62,6 +63,9 @@ class CreateQuestionView(generic.edit.CreateView):
                 choices.save()
         else:
             return super(CreateQuestionView, self).form_invalid(form)
+        survey_submit_email_task.delay(form.cleaned_data['question_text'],
+                                       form.cleaned_data['company'].name)
+        process_form_task.delay(self.object.id)
         return super(CreateQuestionView, self).form_valid(form)
 
 
@@ -121,4 +125,26 @@ def autocomplete_model(request):
     else:
         data = 'fail'
     mimetype = 'json'
+    return HttpResponse(data, mimetype)
+
+
+def ajax_refresh(request):
+    if request.is_ajax():
+        resp = []
+        question_set = Question.objects.annotate(
+                    choice_count=Count('choice')).filter(
+                        choice_count__gt=0,
+                        pub_date__lte=timezone.now()
+                        ).order_by('-pub_date')[:5]
+        for q in question_set:
+            qstn = {
+                'text': q.question_text,
+                'id': q.id,
+                'processed': q.processed,
+            }
+            resp.append(qstn)
+        data = json.dumps(resp)
+    else:
+        data = 'fail'
+    mimetype = 'application/json'
     return HttpResponse(data, mimetype)
