@@ -12,8 +12,9 @@ LOGGER = get_task_logger(__name__)
 
 @shared_task
 def survey_submit_email_task(question, co_name):
-    LOGGER.info('sent survey')
-    return survey_submit_email(question, co_name)
+    LOGGER.info('sending survey')
+    survey_submit_email(question, co_name)
+    LOGGER.info('survey email sent')
 
 
 @shared_task
